@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="70c14a91-3ba7-4290-9669-fca114b0517b" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Properties</name>
+  <display>Properties</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+  <stereotypes />
+  <childElements>
+    <childElement id="879d9593-b18d-4403-a5d6-48f438c027eb" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.LaunchProfiles</name>
+      <display>TFG.Modules.Scheduler.LaunchProfiles</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>70c14a91-3ba7-4290-9669-fca114b0517b</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

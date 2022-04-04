@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="0c6604e6-b412-45ac-bb94-4325849f81a6" type="Class Library (.NET Core)" typeId="52B49DB5-3EA9-4095-B1A7-DF1AC22D7DAE">
+  <name>Tfg.TFGTemplateDemo.Data</name>
+  <display>Tfg.TFGTemplateDemo.Data</display>
+  <externalReference>b3b8dbc2-f5b6-4dc2-9b51-b003a7469c03</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>f1a0b637-c0ec-4db6-84fd-f9e5032aa66a</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="5d85edfb-490c-42c2-81ef-c57c0300eb5a" name=".NET Core Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4756bd10-23e2-473b-9957-d7083759cd42" display="Target Multiple Frameworks" value="false" isActive="true" />
+        <property name="ef3e7b17-ba1d-4818-82a2-5a8ad3875d40" display="Target Framework" value="d603dbfd-3361-4406-b5c0-efc2ac6f33fc" isActive="true" />
+        <property name="5215b600-32fc-4a6d-af72-9eb88a6f30e7" display="Target Frameworks" value="" isActive="false" />
+        <property name="7bfda3d8-b249-488e-b7d4-315d5f2b25f4" display="Runtime Identifiers" value="win10-x64;linux-x64" isActive="true" />
+        <property name="bb694bf2-6758-492d-ae65-5a8626704786" display="Configurations" value="Debug;Release;Test;Local" isActive="true" />
+        <property name="3710062e-9beb-40e2-8f33-111efecf43a5" display="Root Namespace" value="Tfg.TFGTemplateDemo" isActive="true" />
+        <property name="f2956d24-b6da-427b-8728-c4f44714ce69" display="User Secrets Id" isActive="true" />
+        <property name="42cdb74e-d5fd-4969-94ca-585d0527b862" display="Generate Runtime Configuration Files" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="d9b43864-0370-401b-9e71-b1d286919500" name="C# Project Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="cb56677d-e132-4397-b2ec-3f47e950a111" display="Language Version" value="default" isActive="true" />
+        <property name="5c953a82-78c4-4986-b204-df9fcbea5242" display="Relative Location" value="" isActive="true" />
+        <property name="415a5406-0517-4c0e-ab60-bc809a23c308" display="Nullable Enabled" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="55971fb0-e101-4de1-8f32-7e139711f4f7" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.DatabaseContext</name>
+      <display>TFG.Modules.EntityFrameworkCore.DatabaseContext</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>0c6604e6-b412-45ac-bb94-4325849f81a6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="b676e3f9-6013-48c4-b4cd-547d7dfd4eed" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.DatabaseSetup</name>
+      <display>TFG.Modules.EntityFrameworkCore.DatabaseSetup</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>4</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>0c6604e6-b412-45ac-bb94-4325849f81a6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="352a11f4-dcde-4a63-af99-9bb028377f3c" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.DatabaseSqlGenerator</name>
+      <display>TFG.Modules.EntityFrameworkCore.DatabaseSqlGenerator</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>5</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>0c6604e6-b412-45ac-bb94-4325849f81a6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="19674b93-e644-4834-b28e-1a582c054af7" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Data</name>
+      <display>Data</display>
+      <externalReference>61beb53c-5d3e-43e1-bfa0-82ce58611136</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>6</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>0c6604e6-b412-45ac-bb94-4325849f81a6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

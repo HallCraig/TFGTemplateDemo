@@ -1,0 +1,758 @@
+{
+  "source": 2,
+  "revision": 3,
+  "description": null,
+  "isDeleted": false,
+  "variables": {
+    "Database": {
+      "value": "tfgtemplatedemo"
+    },
+    "Group": {
+      "value": "TFGTemplateDemo"
+    },
+    "Password": {
+      "value": "RedHat@OpenShift"
+    },
+    "SQLCreateDB": {
+      "value": "CreateDatabase.sql"
+    },
+    "SQLMigrate": {
+      "value": "Migration.sql"
+    },
+    "SQLName": {
+      "value": "tfgtemplatedemo"
+    },
+    "Team": {
+      "value": "$(System.TeamProject)"
+    }
+  },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 279,
+      "name": "Tst: OpenShift SQL Express",
+      "rank": 1,
+      "variables": {
+        "AppNamespace": {
+          "value": "tst-templateapi"
+        },
+        "OpenShiftEnvironment": {
+          "value": "tst"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+            },
+            "id": 1007
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 1010
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 1011
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": []
+            },
+            "queueId": 111,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Deploy SQL Express (Config)",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-persistent-v1.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p PART_OF=$(Group) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p MSSQL_SA_PASSWORD=\"$(Password)\" -p MSSQL_INSTANCE_SIZE=100Gi MEMORY_LIMIT=10Gi -p MEMORY_REQUEST=7Gi  | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 3 minutes",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "3",
+                "Unit": "minutes"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Clean up Jobs",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "delete job -l  job-type=mssql-script -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Run Create DB SQL Script",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-job-v2.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p BUILD_NUMBER=$(Build.BuildNumber) -p DATABASE_NAME=master -p SQL_FILE=$(SQLCreateDB) -p CONFIG_MAP=script-createdb | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 30sec",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "30",
+                "Unit": "seconds"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Check Success on Create DB",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "wait --timeout=60s --for=condition=complete job/mssql-script-createdb-$(Build.BuildNumber) -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Run Application Migration SQL Script",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-job-v2.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p BUILD_NUMBER=$(Build.BuildNumber) -p DATABASE_NAME=$(Database) -p SQL_FILE=$(SQLMigrate) -p CONFIG_MAP=script-migrations | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 30sec",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "30",
+                "Unit": "seconds"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Check Success on Migrations",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "wait --timeout=60s --for=condition=complete job/mssql-script-migrations-$(Build.BuildNumber) -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": ""
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "currentRelease": {
+        "id": 1854,
+        "url": "https://thefoschinigroup.vsrm.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_apis/Release/releases/1854",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        },
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/184/279"
+    },
+    {
+      "id": 280,
+      "name": "Prd: OpenShift SQL Express",
+      "rank": 2,
+      "variables": {
+        "AppNamespace": {
+          "value": "prd-templateapi"
+        },
+        "OpenShiftEnvironment": {
+          "value": "prd"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+            },
+            "id": 1008
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 1009
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 1012
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": []
+            },
+            "queueId": 111,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Deploy SQL Express (Config)",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-persistent-v1.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p PART_OF=$(Group) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p MSSQL_SA_PASSWORD=\"$(Password)\" -p MSSQL_INSTANCE_SIZE=100Gi MEMORY_LIMIT=10Gi -p MEMORY_REQUEST=7Gi  | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 3 minutes",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "3",
+                "Unit": "minutes"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Clean up Jobs",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "delete job -l  job-type=mssql-script -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Run Create DB SQL Script",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-job-v2.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p BUILD_NUMBER=$(Build.BuildNumber) -p DATABASE_NAME=master -p SQL_FILE=$(SQLCreateDB) -p CONFIG_MAP=script-createdb | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 30sec",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "30",
+                "Unit": "seconds"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Check Success on Create DB",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "wait --timeout=60s --for=condition=complete job/mssql-script-createdb-$(Build.BuildNumber) -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Run Application Migration SQL Script",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process mssql-job-v2.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p MSSQL_INSTANCE_NAME=$(OpenShiftEnvironment)-$(SQLName) -p BUILD_NUMBER=$(Build.BuildNumber) -p DATABASE_NAME=$(Database) -p SQL_FILE=$(SQLMigrate) -p CONFIG_MAP=script-migrations | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "5a775a50-3372-1290-9ce0-1579c1e597fb",
+              "version": "1.*",
+              "name": "Wait for 30sec",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "Value": "30",
+                "Unit": "seconds"
+              }
+            },
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Check Success on Migrations",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                "cmd": "wait --timeout=60s --for=condition=complete job/mssql-script-migrations-$(Build.BuildNumber) -n $(AppNamespace)",
+                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        },
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/184/280"
+    }
+  ],
+  "releaseNameFormat": "Main-Release-Database-$(date:yy).$(date:MM).$(date:dd)-$(rev:rr)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseClone"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    }
+  },
+  "id": 184,
+  "name": "TFGTemplateDemo Main CD - Database Deployment - OpenShift",
+  "path": "\\TFGTemplateDemo",
+  "projectReference": null
+
+}

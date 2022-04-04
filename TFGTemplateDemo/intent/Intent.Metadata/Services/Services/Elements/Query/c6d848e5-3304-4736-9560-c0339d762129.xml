@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="c6d848e5-3304-4736-9560-c0339d762129" type="Query" typeId="e71b0662-e29d-4db2-868b-8a12464b25d0">
+  <name>GetProductsRequest</name>
+  <display>GetProductsRequest: ProductResponse[*]</display>
+  <isAbstract>false</isAbstract>
+  <order>3</order>
+  <genericTypes />
+  <typeReference id="1887824d-de51-4433-b07d-a46444eb563d">
+    <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>true</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Services</typePackageName>
+    <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>4e3c5c46-3cfb-4dfa-a746-3a5da7b5512b</parentFolderId>
+  <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+  <packageName>Services</packageName>
+  <stereotypes />
+  <childElements>
+    <childElement id="f220825f-ba71-4c63-8d93-3d1ce025c629" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Name</name>
+      <display>Name: string</display>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <typeReference id="fdf77cf8-8a51-4a59-ad56-7035db22eb2a">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>c6d848e5-3304-4736-9560-c0339d762129</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,118 @@
+name: $(Date:yy).$(Date:MM).$(Date:dd)$(Rev:rr)
+trigger:
+  branches:
+    include:
+    - development
+variables:
+- name: solution
+  value: '**/*.sln'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: buildConfiguration
+  value: 'debug'
+- name: OSProjectName
+  value: 'templateapi'
+- name: SonarNameKey
+  value: 'TFGTemplateDemo'
+- name: VSProject
+  value: 'Tfg.TFGTemplateDemo.Api'
+stages:
+- stage: __default
+  jobs:
+  - job: Job
+    pool:
+      name: 'VSTS Build 01'
+    steps:
+    - task: SonarCloudPrepare@1
+      displayName: Sonar Cloud Prepare
+      inputs:
+        SonarCloud: 'SonarCloud'
+        organization: 'thefoschinigroup'
+        scannerMode: 'MSBuild'
+        projectKey: '$(SonarNameKey)'
+        projectName: '$(SonarNameKey)'
+    - task: NuGetToolInstaller@1
+      inputs:
+        versionSpec: '5.8.1'
+        checkLatest: true
+    - task: NuGetCommand@2
+      inputs:
+        command: 'restore'
+        restoreSolution: '$(solution)'
+        feedsToUse: 'config'
+        nugetConfigPath: 'nuget.config'
+        externalFeedCredentials: 'TFGNuget'
+    - task: VSBuild@1
+      displayName: Build Solution
+      inputs:
+        solution: '$(solution)'
+        msbuildArgs: '/p:DefineConstants="DEBUG" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)\$(buildConfiguration)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: CmdLine@2
+      displayName: Set Authentication for ADO Artifacts
+      inputs:
+        script: 'C:\Users\svc_tfsapp_service\.nuget\plugins\netfx\CredentialProvider.Microsoft\CredentialProvider.Microsoft.exe -I -V Verbose -U "https://thefoschinigroup.pkgs.visualstudio.com/_packaging/TFG/nuget/v3/index.json"'
+        workingDirectory: 'C:\'
+    - task: DotNetCoreCLI@2
+      displayName: 'Generate Migrations script'
+      inputs:
+        command: custom
+        custom: 'ef '
+        arguments: '--project $(Build.SourcesDirectory)/$(VSProject)/$(VSProject).csproj migrations script -i -o $(Build.ArtifactStagingDirectory)/Migration.sql'
+    - task: VSTest@2
+      displayName: Run Unit Tests
+      inputs:
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: SonarCloudAnalyze@1
+      displayName: Sonar Cloud Analysis
+    - task: CopyFiles@2
+      displayName: Copy SQL Scripts
+      inputs:
+        SourceFolder: '$(build.SourcesDirectory)'
+        Contents: |
+          **\CreateDatabase.sql
+          **\Migrate.sql
+        TargetFolder: '$(build.ArtifactStagingDirectory)'
+        flattenFolders: true
+    - task: oc-cmd@2
+      displayName: 'Create Configmap - SQL Migrations Script'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'create configmap script-migrations-$(Build.BuildNumber) --from-file=''$(build.ArtifactStagingDirectory)\Migration.sql'' -n dev-$(OSProjectName)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Create Configmap - SQL Create Database Script'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'create configmap script-createdb-$(Build.BuildNumber) --from-file=''$(build.ArtifactStagingDirectory)\CreateDatabase.sql'' -n dev-$(OSProjectName)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Add Label Configmap'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'label configmap script-migrations-$(Build.BuildNumber) buildnumber=$(Build.BuildNumber) type=script -n dev-$(OSProjectName)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Add Label Configmap'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'label configmap script-createdb-$(Build.BuildNumber) buildnumber=$(Build.BuildNumber) type=script -n dev-$(OSProjectName)'
+        uselocalOc: true
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Artifacts
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+    - task: SonarCloudPublish@1
+      displayName: Sonar Cloud Publish
+      inputs:
+        pollingTimeoutSec: '300'
+      enabled: false
+

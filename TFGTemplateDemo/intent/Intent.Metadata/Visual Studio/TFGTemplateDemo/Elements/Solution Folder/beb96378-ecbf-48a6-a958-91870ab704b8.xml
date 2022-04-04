@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="beb96378-ecbf-48a6-a958-91870ab704b8" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>2 Application</name>
+  <display>2 Application</display>
+  <externalReference>332c7846-61e5-4aa6-a25f-369295efd1a6</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>2</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2b37436e-982b-4777-b51d-c9dcf6af2903</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

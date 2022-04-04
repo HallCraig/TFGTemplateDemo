@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="75357422-823a-494c-b690-1ab71f241121" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>3 Infrastructure</name>
+  <display>3 Infrastructure</display>
+  <externalReference>51eec32e-518f-4504-b6f3-0bb581dbe30a</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>3</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2b37436e-982b-4777-b51d-c9dcf6af2903</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

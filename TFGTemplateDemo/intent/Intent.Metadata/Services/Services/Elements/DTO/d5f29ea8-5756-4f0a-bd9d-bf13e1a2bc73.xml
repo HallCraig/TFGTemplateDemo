@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73" type="DTO" typeId="fee0edca-4aa0-4f77-a524-6bbd84e78734">
+  <name>ProductResponse</name>
+  <display>ProductResponse</display>
+  <isAbstract>false</isAbstract>
+  <order>5</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>4e3c5c46-3cfb-4dfa-a746-3a5da7b5512b</parentFolderId>
+  <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+  <packageName>Services</packageName>
+  <stereotypes />
+  <childElements>
+    <childElement id="061eca9d-9abc-4e1a-add1-9d27874f1607" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Id</name>
+      <display>Id: guid</display>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <typeReference id="7de4e3a7-d798-4d9f-862b-e0ef1db03640">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="425d1bd8-8db4-4ef9-a37b-13df44da4e6b" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Code</name>
+      <display>Code: string</display>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <typeReference id="c0819917-a228-4d54-835b-662cf2ef0c33">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="dea94c2b-6f29-41b0-ba55-2cef27624355" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Name</name>
+      <display>Name: string</display>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <typeReference id="bc9e20f8-1259-4796-87c3-ab94f9a7c3a8">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="4afc1943-0737-495c-a05b-b453e2e8aa67" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>UserCreated</name>
+      <display>UserCreated: string</display>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <typeReference id="bff3824a-6342-4f46-bc51-1f0acc14898f">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="cf053ad9-0082-4a2b-966e-d8363df24f45" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>UserModified</name>
+      <display>UserModified: string</display>
+      <isAbstract>false</isAbstract>
+      <order>4</order>
+      <genericTypes />
+      <typeReference id="1e6e3029-b388-45d0-affa-8547492c03ac">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="e9be0dc5-ea91-4b31-bee2-a961cb60b366" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>DateCreated</name>
+      <display>DateCreated: datetimeoffset</display>
+      <isAbstract>false</isAbstract>
+      <order>5</order>
+      <genericTypes />
+      <typeReference id="d1b7da1a-f343-4b67-a7fa-ac18886b96fb">
+        <typeId>f1ba4df3-a5bc-427e-a591-4f6029f89bd7</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="db9368d6-6ff6-42fd-b6ee-932670fc2296" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>DateModified</name>
+      <display>DateModified: datetimeoffset</display>
+      <isAbstract>false</isAbstract>
+      <order>6</order>
+      <genericTypes />
+      <typeReference id="3dd6e870-32c5-4b8e-b050-786acea25d02">
+        <typeId>f1ba4df3-a5bc-427e-a591-4f6029f89bd7</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

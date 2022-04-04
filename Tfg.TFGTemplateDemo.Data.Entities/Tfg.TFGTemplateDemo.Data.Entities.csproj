@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Configurations>Debug;Release;Test;Local</Configurations>
+	<RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tfg.DotNet.IEntity" Version="2.0.2" />
+    <PackageReference Include="Tfg.Patterns.AuditSink.Persistence" Version="2.0.0" />
+  </ItemGroup>
+
+</Project>

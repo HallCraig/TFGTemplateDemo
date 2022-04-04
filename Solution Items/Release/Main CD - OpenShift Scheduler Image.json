@@ -1,0 +1,384 @@
+{
+  "source": 2,
+  "revision": 19,
+  "description": null,
+  "isDeleted": false,
+  "variables": {
+    "ApplicationName": {
+      "value": "tfgtemplatedemoscheduler"
+    },
+    "BuildNamespace": {
+      "value": "build-templateapi"
+    },
+    "Database": {
+      "value": "tfgtemplatedemo"
+    },
+    "Group": {
+      "value": "TFGTemplateDemo"
+    },
+    "ImageName": {
+      "value": "main-tfgtemplatedemoscheduler"
+    },
+    "Team": {
+      "value": "$(System.TeamProject)"
+    }
+  },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 214,
+      "name": "Test: TFGTemplateDemo Scheduler Image",
+      "rank": 1,
+      "variables": {
+        "AppNamespace": {
+          "value": "tst-templateapi"
+        },
+        "ASPNETCORE_ENVIRONMENT": {
+          "value": "Test"
+        },
+        "OpenShiftEnvironment": {
+          "value": "tst"
+        },
+        "SQLExpress": {
+          "value": "mssql-tst-tfgtemplatedemo-tst"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+
+            },
+            "id": 1028
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 768
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 771
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": []
+            },
+            "queueId": 111,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Deploy Image Scheduler (Config/Service/Route)",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process dotnet-api-v3.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p BUILD_NAME=$(BuildNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p PART_OF=$(Group) -p CONNECTS_TO_DATABASE=$(SQLExpress) -p APPLICATION_NAME=$(ApplicationName) -p ASPNETCORE_ENVIRONMENT=$(ASPNETCORE_ENVIRONMENT) -p IMAGE_STREAM_NAME=$(ImageName) -p IMAGE_TAG=$(Build.BuildNumber) -p ROUTE_NAME=$(OpenShiftEnvironment)-$(ApplicationName) -p MEMORY_LIMIT=1Gi -p MEMORY_REQUEST=1Gi | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": ""
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        },
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/140/214"
+    },
+    {
+      "id": 266,
+      "name": "Prod: TFGTemplateDemo Scheduler Image",
+      "rank": 2,
+      "variables": {
+        "AppNamespace": {
+          "value": "prd-templateapi"
+        },
+        "ASPNETCORE_ENVIRONMENT": {
+          "value": "Production"
+        },
+        "OpenShiftEnvironment": {
+          "value": "prd"
+        },
+        "SQLExpress": {
+          "value": "mssql-prd-tfgtemplatedemo-prd"
+        }
+      },
+      "variableGroups": [],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": false,
+            "isNotificationOn": false,
+            "approver": {
+
+            },
+            "id": 1029
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": true,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 969
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 970
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": []
+            },
+            "queueId": 111,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "ebaf1cdc-a60f-4e57-ba29-e3b8f80aeb1e",
+              "version": "2.*",
+              "name": "Deploy Image Scheduler (Config/Service/Route)",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "task",
+              "overrideInputs": {},
+              "condition": "succeeded()",
+              "inputs": {
+                "connectionType": "OpenShift Connection Service",
+                "openshiftService": "58cc76f1-e92a-404f-8f72-d8b9c385a747",
+                "configurationType": "file",
+                "configurationPath": "",
+                "inlineConfig": "",
+                "version": "",
+                                "cmd": "process dotnet-api-v3.0.0 -n tfg-templates -p PROJECT_NAME=$(AppNamespace) -p BUILD_NAME=$(BuildNamespace) -p ENVIRONMENT=$(OpenShiftEnvironment) -p PART_OF=$(Group) -p CONNECTS_TO_DATABASE=$(SQLExpress) -p APPLICATION_NAME=$(ApplicationName) -p ASPNETCORE_ENVIRONMENT=$(ASPNETCORE_ENVIRONMENT) -p IMAGE_STREAM_NAME=$(ImageName) -p IMAGE_TAG=$(Build.BuildNumber) -p ROUTE_NAME=$(OpenShiftEnvironment)-$(ApplicationName) -p MEMORY_LIMIT=1Gi -p MEMORY_REQUEST=1Gi | oc apply -f -",
+                                "ignoreFlag": "false",
+                "uselocalOc": "true",
+                "proxy": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [],
+      "currentRelease": {
+        "id": 1915,
+        "url": "https://thefoschinigroup.vsrm.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_apis/Release/releases/1915",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        },
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "testing"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": []
+      },
+      "environmentTriggers": [],
+      "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/140/266"
+    }
+  ],
+  "releaseNameFormat": "Main-Release-Scheduler-$(date:yy).$(date:MM).$(date:dd)-$(rev:rr)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseImport"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    }
+  },
+  "id": 140,
+  "name": "TFGTemplateDemo Main CD - OpenShift Scheduler Image",
+  "path": "\\TFGTemplateDemo",
+  "projectReference": null
+}

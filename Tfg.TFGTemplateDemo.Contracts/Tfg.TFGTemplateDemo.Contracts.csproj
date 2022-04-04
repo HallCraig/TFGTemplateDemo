@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
+    <Configurations>Debug;Release;Test;Local</Configurations>
+  </PropertyGroup>
+
+</Project>

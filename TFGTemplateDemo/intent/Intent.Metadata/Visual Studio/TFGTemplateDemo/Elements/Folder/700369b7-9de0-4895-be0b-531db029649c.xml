@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="700369b7-9de0-4895-be0b-531db029649c" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Scripts</name>
+  <display>Scripts</display>
+  <isAbstract>false</isAbstract>
+  <order>2</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>0c6604e6-b412-45ac-bb94-4325849f81a6</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="d22491fa-b4fb-4a5d-8e0d-0ab914697d80" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.SQLFileGroups</name>
+      <display>TFG.Modules.EntityFrameworkCore.SQLFileGroups</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>700369b7-9de0-4895-be0b-531db029649c</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="5c54cfea-4a27-4f08-9979-501ba9f9780b" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.SQLPermissions</name>
+      <display>TFG.Modules.EntityFrameworkCore.SQLPermissions</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>700369b7-9de0-4895-be0b-531db029649c</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="234a4533-808e-40aa-b2dc-54a1b04a8487" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.EntityFrameworkCore.SQLHangfire</name>
+      <display>TFG.Modules.EntityFrameworkCore.SQLHangfire</display>
+      <externalReference>TFG.Modules.EntityFrameworkCore</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>700369b7-9de0-4895-be0b-531db029649c</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

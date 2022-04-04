@@ -1,0 +1,26 @@
+﻿{
+  "ProviderId": "Microsoft.VisualStudio.ConnectedService.Wcf",
+  "Version": "15.0.40203.910",
+  "GettingStartedDocument": {
+    "Uri": "https://go.microsoft.com/fwlink/?linkid=858517"
+  },
+  "ExtendedData": {
+    "inputs": [
+      "http://dev-services2.ho.fosltd.co.za:81/ActiveDirectory.1.1/ActiveDirectoryHelperService.svc"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, ActiveDirectoryHelperService"
+    ],
+    "references": [
+      "E:\\Development\\Git\\DA\\TFGTemplateDemos\\tfgtemplatedemos\\Tfg.TFGTemplateDemo\\Tfg.TFGTemplateDemo.Business\\bin\\Debug\\netcoreapp3.1\\win10-x64\\Tfg.TFGTemplateDemo.Contracts.dll",
+      "E:\\Development\\Git\\DA\\TFGTemplateDemos\\tfgtemplatedemos\\Tfg.TFGTemplateDemo\\Tfg.TFGTemplateDemo.Business\\bin\\Debug\\netcoreapp3.1\\win10-x64\\Tfg.TFGTemplateDemo.Data.Entities.dll",
+      "E:\\Development\\Git\\DA\\TFGTemplateDemos\\tfgtemplatedemos\\Tfg.TFGTemplateDemo\\Tfg.TFGTemplateDemo.Business\\bin\\Debug\\netcoreapp3.1\\win10-x64\\Tfg.TFGTemplateDemo.Domain.dll"
+    ],
+    "targetFramework": "netcoreapp3.1",
+    "typeReuseMode": "All"
+  }
+}

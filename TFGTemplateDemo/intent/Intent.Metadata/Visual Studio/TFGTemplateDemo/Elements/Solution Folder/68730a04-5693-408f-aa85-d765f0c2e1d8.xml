@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="68730a04-5693-408f-aa85-d765f0c2e1d8" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>Release</name>
+  <display>Release</display>
+  <externalReference>0402a8fc-ba10-4cbe-baad-c4d06baa9891</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements>
+    <childElement id="a14225d6-cd09-4b53-b005-0e14e2962890" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>SolutionItems.Release</name>
+      <display>SolutionItems.Release</display>
+      <externalReference>5baf9b7a-2f68-4bc3-a546-24d37441026d</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>68730a04-5693-408f-aa85-d765f0c2e1d8</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="e41543d5-eacd-430b-930b-f9d8cb3f5a87" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.SolutionItems.Release</name>
+      <display>TFG.Modules.Integration.SolutionItems.Release</display>
+      <externalReference>TFG.Modules.Integration</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>68730a04-5693-408f-aa85-d765f0c2e1d8</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="2d0a79e8-4b25-427b-8778-529a7e78fc20" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.SolutionItems.Release</name>
+      <display>TFG.Modules.Scheduler.SolutionItems.Release</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>68730a04-5693-408f-aa85-d765f0c2e1d8</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="f11bd773-e4f5-4855-99db-4ae904c74c73" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.WebApi.SolutionItems.Release</name>
+      <display>TFG.Modules.WebApi.SolutionItems.Release</display>
+      <externalReference>TFG.Modules.WebApi</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>68730a04-5693-408f-aa85-d765f0c2e1d8</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

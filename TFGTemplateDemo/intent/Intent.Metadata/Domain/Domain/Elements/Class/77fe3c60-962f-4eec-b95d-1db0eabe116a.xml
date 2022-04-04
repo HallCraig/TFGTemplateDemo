@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="77fe3c60-962f-4eec-b95d-1db0eabe116a" type="Class" typeId="04e12b51-ed12-42a3-9667-a6aa81bb6d10">
+  <name>Product</name>
+  <display>Product</display>
+  <externalReference>36196581-7263-48b1-bde8-b733b4556f54</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>7e269c31-d48c-42c5-a616-86728add100d</parentFolderId>
+  <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+  <packageName>Domain</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="ea9e01cc-e93d-4bd1-95fe-ced99934e444" name="IEntity">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>TFG.ModelerExtensions.IEntity</definitionPackageName>
+      <definitionPackageId>c8d4d70d-88a2-4591-bba9-660b76da6540</definitionPackageId>
+      <properties>
+        <property name="f99748ae-0ede-4451-add1-aca24b54376f" display="IsIEntity" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="6a9b4bd6-b331-4cfe-98ee-89267aa34f08" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Id</name>
+      <display>Id: guid</display>
+      <externalReference>2ec1dcd8-5cb9-4b96-a356-1bc98a01dd48</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <typeReference id="ad2152fb-9518-4677-9d14-0efb8be31cc1">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="fcfea850-8f7b-42e8-8bd7-a3b10d89b623" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Code</name>
+      <display>Code: string</display>
+      <externalReference>f4be3521-f926-42e6-952b-d64a50e8ee08</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <typeReference id="50b441b4-7559-487a-8fec-0c37efb37fbd">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="86e526bc-9bfc-4727-bdc9-b6ecb028d691" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>Name</name>
+      <display>Name: string</display>
+      <externalReference>b60ab00c-1995-4a21-a043-edc92c2113d1</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <typeReference id="e49bf9b5-4338-43c1-b254-df680d2f36b2">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="77605790-ac41-4e15-b497-ce00c98d6d09" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UserCreated</name>
+      <display>UserCreated: string</display>
+      <externalReference>8f712abc-acd5-4867-806a-022a0597d80e</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <typeReference id="a3bb1f3e-0495-432d-beba-4da7ff6df64d">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="e0a9e99e-ec8f-4e65-8b15-e49673cad835" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>UserModified</name>
+      <display>UserModified: string</display>
+      <externalReference>8236be9f-6d32-4507-ad11-74dfe110b1a0</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>4</order>
+      <genericTypes />
+      <typeReference id="9f573de1-d5c3-4c4e-bd0a-c36633dcb9f2">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="b38af78b-5a88-4536-aaac-72150f4c0a93" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>DateCreated</name>
+      <display>DateCreated: datetimeoffset</display>
+      <externalReference>ff250624-187c-406b-b6fb-6af9adc71354</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>5</order>
+      <genericTypes />
+      <typeReference id="5837ffdd-c07c-42e6-82bc-9e91fa446ecd">
+        <typeId>f1ba4df3-a5bc-427e-a591-4f6029f89bd7</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="bdce308d-00c4-4e9d-8784-72cecdf076fa" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>DateModified</name>
+      <display>DateModified: datetimeoffset</display>
+      <externalReference>ded626da-d294-4876-9e36-8c4f82c8f6a4</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>6</order>
+      <genericTypes />
+      <typeReference id="8c50a568-c6a6-4992-9d87-fbfe94d42654">
+        <typeId>f1ba4df3-a5bc-427e-a591-4f6029f89bd7</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="b20e1e36-308c-4b19-9c85-14db62468321" type="Attribute" typeId="0090fb93-483e-41af-a11d-5ad2dc796adf">
+      <name>IsRetired</name>
+      <display>IsRetired: bool</display>
+      <externalReference>9518c74e-88d6-4b7a-8133-df6b1fcba326</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>7</order>
+      <genericTypes />
+      <typeReference id="584be4ff-a90c-439b-bd17-56a6360eed43">
+        <typeId>e6f92b09-b2c5-4536-8270-a4d9e5bbd930</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>77fe3c60-962f-4eec-b95d-1db0eabe116a</parentFolderId>
+      <packageId>7e269c31-d48c-42c5-a616-86728add100d</packageId>
+      <packageName>Domain</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

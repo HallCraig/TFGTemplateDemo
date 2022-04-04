@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="27d11e3f-4d09-4f5b-8e19-131edbf2336f" type="ASP.NET Core Web Application" typeId="FFD54A85-9362-48AC-B646-C93AB9AC63D2">
+  <name>Tfg.TFGTemplateDemo.SchedulerApi</name>
+  <display>Tfg.TFGTemplateDemo.SchedulerApi</display>
+  <externalReference>06595362-0c8c-420a-b21f-070edf5f53ec</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>2</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>aa2b4209-7ad0-414a-946d-dd2f23439bc7</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="5d85edfb-490c-42c2-81ef-c57c0300eb5a" name=".NET Core Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4756bd10-23e2-473b-9957-d7083759cd42" display="Target Multiple Frameworks" value="false" isActive="true" />
+        <property name="ef3e7b17-ba1d-4818-82a2-5a8ad3875d40" display="Target Framework" value="d603dbfd-3361-4406-b5c0-efc2ac6f33fc" isActive="true" />
+        <property name="5215b600-32fc-4a6d-af72-9eb88a6f30e7" display="Target Frameworks" value="" isActive="false" />
+        <property name="7bfda3d8-b249-488e-b7d4-315d5f2b25f4" display="Runtime Identifiers" value="win10-x64;linux-x64" isActive="true" />
+        <property name="bb694bf2-6758-492d-ae65-5a8626704786" display="Configurations" value="Debug;Release;Test;Local" isActive="true" />
+        <property name="3710062e-9beb-40e2-8f33-111efecf43a5" display="Root Namespace" isActive="true" />
+        <property name="f2956d24-b6da-427b-8728-c4f44714ce69" display="User Secrets Id" value="ea5f07c9-a32d-4376-bd20-c1c071834876" isActive="true" />
+        <property name="42cdb74e-d5fd-4969-94ca-585d0527b862" display="Generate Runtime Configuration Files" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="d9b43864-0370-401b-9e71-b1d286919500" name="C# Project Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="cb56677d-e132-4397-b2ec-3f47e950a111" display="Language Version" value="default" isActive="true" />
+        <property name="5c953a82-78c4-4986-b204-df9fcbea5242" display="Relative Location" value="" isActive="true" />
+        <property name="415a5406-0517-4c0e-ab60-bc809a23c308" display="Nullable Enabled" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="e77e4ddc-068a-4f3e-8480-9c122ad8401a" name="Integration Publishing">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>TFG.Modules.Integration.Publisher</definitionPackageName>
+      <definitionPackageId>f711ee59-dea3-4dde-8739-0fd6c1a42da5</definitionPackageId>
+      <properties>
+        <property name="a0cc6c01-4ef5-47cd-addf-5a300d67d778" display="Kafka Publisher" value="false" isActive="true" />
+        <property name="d08a2c8a-0698-4cd7-bad8-411cde124d96" display="Include Kafka Publisher Example" value="false" isActive="false" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="0612952e-8097-41e5-9153-7ee4cdebf510" name="WCF Client">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>TFG.Modules.WCF</definitionPackageName>
+      <definitionPackageId>9e16613d-c263-4d45-910a-11a3df6ea08a</definitionPackageId>
+      <properties>
+        <property name="869deae7-9ee0-43ad-8786-7c2a4fbd76cb" display="WCF Client Support" value="false" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="50caef2a-3cc6-4e63-88f8-8df8d8e339ea" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.Program</name>
+      <display>TFG.Modules.Scheduler.Program</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="a4d1bd48-d89d-4630-8ed7-13094adf774b" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.SchedulerApiExtensions</name>
+      <display>TFG.Modules.Scheduler.SchedulerApiExtensions</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>4</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="3040bd8f-2255-4afd-9bea-c20d11916828" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.WebConfig</name>
+      <display>TFG.Modules.Scheduler.WebConfig</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>5</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="89c7ffb2-8e35-4f43-96e2-f78113900f13" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.WebConfigDevelopment</name>
+      <display>TFG.Modules.Scheduler.WebConfigDevelopment</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>6</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="6e61cd1f-a263-4884-8545-a75f3bb614db" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.WebConfigProduction</name>
+      <display>TFG.Modules.Scheduler.WebConfigProduction</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>7</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="829cbad2-0249-41ff-a6f4-c0ae1ba10afe" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.WebConfigTest</name>
+      <display>TFG.Modules.Scheduler.WebConfigTest</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>8</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="6dc0385f-29b5-460a-9408-3f162b4214e7" type="Role" typeId="025e933b-b602-4b6d-95ab-0ec36ae940da">
+      <name>Scheduler</name>
+      <display>Scheduler</display>
+      <externalReference>ecf0a44c-5562-477a-8144-fabdfdbf98bf</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>9</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

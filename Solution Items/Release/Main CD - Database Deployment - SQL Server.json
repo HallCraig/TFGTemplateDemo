@@ -1,0 +1,435 @@
+{
+    "source": 2,
+    "revision": 8,
+    "description": null,    
+    "modifiedOn": "2021-11-24T09:23:30.803Z",
+    "isDeleted": false,
+    "variables": {
+        "Database": {
+            "value": "TFGTemplateDemo"
+        },
+        "SQLCreateDB": {
+            "value": "CreateDatabase.sql"
+        },
+        "SQLMigrate": {
+            "value": "Migration.sql"
+        },
+        "Team": {
+            "value": "$(System.TeamProject)"
+        }
+    },
+    "variableGroups": [],
+    "environments": [
+        {
+            "id": 275,
+            "name": "Tst: SQL Server",
+            "rank": 1,
+            "variables": {
+                "SQLServer": {
+                    "value": "TST-SQLS41"
+                }
+            },
+            "variableGroups": [],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {                            
+                        },
+                        "id": 993
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 998
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 1001
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "healthPercent": 0,
+                        "deploymentHealthOption": "Custom",
+                        "tags": [
+                            "$(SQLServer)"
+                        ],
+                        "skipArtifactsDownload": false,                        
+                        "queueId": 428,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 4,
+                    "name": "Deployment group job",
+                    "refName": null,
+                    "workflowTasks": [
+                        {
+                            "environment": {},
+                            "taskId": "4b506f7f-720f-47bb-bf21-029bac6a690d",
+                            "version": "0.*",
+                            "name": "Run Create Database Script",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "retryCountOnTaskFailure": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "TaskType": "sqlQuery",
+                                "DacpacFile": "",
+                                "SqlFile": "$(System.ArtifactsDirectory)\\$(Release.PrimaryArtifactSourceAlias)\\drop\\$(SQLCreateDB)",
+                                "ExecuteInTransaction": "true",
+                                "ExclusiveLock": "false",
+                                "AppLockName": "",
+                                "InlineSql": "",
+                                "TargetMethod": "server",
+                                "ServerName": "localhost",
+                                "DatabaseName": "master",
+                                "AuthScheme": "windowsAuthentication",
+                                "SqlUsername": "",
+                                "SqlPassword": "",
+                                "ConnectionString": "",
+                                "PublishProfile": "",
+                                "AdditionalArguments": "",
+                                "AdditionalArgumentsSql": ""
+                            }
+                        },
+                        {
+                            "environment": {},
+                            "taskId": "4b506f7f-720f-47bb-bf21-029bac6a690d",
+                            "version": "0.*",
+                            "name": "Run Application Migrations",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "retryCountOnTaskFailure": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "TaskType": "sqlQuery",
+                                "DacpacFile": "",
+                                "SqlFile": "$(System.ArtifactsDirectory)\\$(Release.PrimaryArtifactSourceAlias)\\drop\\$(SQLMigrate)",
+                                "ExecuteInTransaction": "true",
+                                "ExclusiveLock": "false",
+                                "AppLockName": "",
+                                "InlineSql": "",
+                                "TargetMethod": "server",
+                                "ServerName": "localhost",
+                                "DatabaseName": "$(Database)",
+                                "AuthScheme": "windowsAuthentication",
+                                "SqlUsername": "",
+                                "SqlPassword": "",
+                                "ConnectionString": "",
+                                "PublishProfile": "",
+                                "AdditionalArguments": "",
+                                "AdditionalArgumentsSql": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [
+                {
+                    "name": "ReleaseStarted",
+                    "conditionType": 1,
+                    "value": ""
+                }
+            ],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {
+                "LinkBoardsWorkItems": {
+                    "$type": "System.String",
+                    "$value": "False"
+                },
+                "BoardsEnvironmentType": {
+                    "$type": "System.String",
+                    "$value": "unmapped"
+                }
+            },
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/182/275"
+        },
+        {
+            "id": 277,
+            "name": "Prd: SQL Server",
+            "rank": 2,            
+            "variables": {
+                "SQLServer": {
+                    "value": "PRD-SQLS41"
+                }
+            },
+            "variableGroups": [],
+            "preDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": false,
+                        "isNotificationOn": false,
+                        "approver": {                            
+                        },
+                        "id": 995
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": true,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 1
+                }
+            },
+            "deployStep": {
+                "id": 996
+            },
+            "postDeployApprovals": {
+                "approvals": [
+                    {
+                        "rank": 1,
+                        "isAutomated": true,
+                        "isNotificationOn": false,
+                        "id": 1003
+                    }
+                ],
+                "approvalOptions": {
+                    "requiredApproverCount": null,
+                    "releaseCreatorCanBeApprover": false,
+                    "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+                    "enforceIdentityRevalidation": false,
+                    "timeoutInMinutes": 0,
+                    "executionOrder": 2
+                }
+            },
+            "deployPhases": [
+                {
+                    "deploymentInput": {
+                        "healthPercent": 0,
+                        "deploymentHealthOption": "Custom",
+                        "tags": [
+                            "$(SQLServer)"
+                        ],
+                        "skipArtifactsDownload": false,
+                        "artifactsDownloadInput": {
+                            "downloadInputs": []
+                        },
+                        "queueId": 429,
+                        "demands": [],
+                        "enableAccessToken": false,
+                        "timeoutInMinutes": 0,
+                        "jobCancelTimeoutInMinutes": 1,
+                        "condition": "succeeded()",
+                        "overrideInputs": {}
+                    },
+                    "rank": 1,
+                    "phaseType": 4,
+                    "name": "Deployment group job",
+                    "refName": null,
+                    "workflowTasks": [
+                        {
+                            "environment": {},
+                            "taskId": "4b506f7f-720f-47bb-bf21-029bac6a690d",
+                            "version": "0.*",
+                            "name": "Run Create Database Script",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "retryCountOnTaskFailure": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "TaskType": "sqlQuery",
+                                "DacpacFile": "",
+                                "SqlFile": "$(System.ArtifactsDirectory)\\$(Release.PrimaryArtifactSourceAlias)\\drop\\$(SQLCreateDB)",
+                                "ExecuteInTransaction": "true",
+                                "ExclusiveLock": "false",
+                                "AppLockName": "",
+                                "InlineSql": "",
+                                "TargetMethod": "server",
+                                "ServerName": "localhost",
+                                "DatabaseName": "master",
+                                "AuthScheme": "windowsAuthentication",
+                                "SqlUsername": "",
+                                "SqlPassword": "",
+                                "ConnectionString": "",
+                                "PublishProfile": "",
+                                "AdditionalArguments": "",
+                                "AdditionalArgumentsSql": ""
+                            }
+                        },
+                        {
+                            "environment": {},
+                            "taskId": "4b506f7f-720f-47bb-bf21-029bac6a690d",
+                            "version": "0.*",
+                            "name": "Run Application Migrations",
+                            "refName": "",
+                            "enabled": true,
+                            "alwaysRun": false,
+                            "continueOnError": false,
+                            "timeoutInMinutes": 0,
+                            "retryCountOnTaskFailure": 0,
+                            "definitionType": "task",
+                            "overrideInputs": {},
+                            "condition": "succeeded()",
+                            "inputs": {
+                                "TaskType": "sqlQuery",
+                                "DacpacFile": "",
+                                "SqlFile": "$(System.ArtifactsDirectory)\\$(Release.PrimaryArtifactSourceAlias)\\drop\\$(SQLMigrate)",
+                                "ExecuteInTransaction": "true",
+                                "ExclusiveLock": "false",
+                                "AppLockName": "",
+                                "InlineSql": "",
+                                "TargetMethod": "server",
+                                "ServerName": "localhost",
+                                "DatabaseName": "$(Database)",
+                                "AuthScheme": "windowsAuthentication",
+                                "SqlUsername": "",
+                                "SqlPassword": "",
+                                "ConnectionString": "",
+                                "PublishProfile": "",
+                                "AdditionalArguments": "",
+                                "AdditionalArgumentsSql": ""
+                            }
+                        }
+                    ]
+                }
+            ],
+            "environmentOptions": {
+                "emailNotificationType": "OnlyOnFailure",
+                "emailRecipients": "release.environment.owner;release.creator",
+                "skipArtifactsDownload": false,
+                "timeoutInMinutes": 0,
+                "enableAccessToken": false,
+                "publishDeploymentStatus": true,
+                "badgeEnabled": false,
+                "autoLinkWorkItems": false,
+                "pullRequestDeploymentEnabled": false
+            },
+            "demands": [],
+            "conditions": [],
+            "executionPolicy": {
+                "concurrencyCount": 1,
+                "queueDepthCount": 0
+            },
+            "schedules": [],
+            "retentionPolicy": {
+                "daysToKeep": 30,
+                "releasesToKeep": 3,
+                "retainBuild": true
+            },
+            "processParameters": {},
+            "properties": {
+                "LinkBoardsWorkItems": {
+                    "$type": "System.String",
+                    "$value": "False"
+                },
+                "BoardsEnvironmentType": {
+                    "$type": "System.String",
+                    "$value": "unmapped"
+                }
+            },
+            "preDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "postDeploymentGates": {
+                "id": 0,
+                "gatesOptions": null,
+                "gates": []
+            },
+            "environmentTriggers": [],
+            "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/182/277"
+        }
+    ],
+    "releaseNameFormat": "Main-Release-Database-$(date:yy).$(date:MM).$(date:dd)-$(rev:rr)",
+    "tags": [],
+    "properties": {
+        "DefinitionCreationSource": {
+            "$type": "System.String",
+            "$value": "ReleaseClone"
+        },
+        "IntegrateJiraWorkItems": {
+            "$type": "System.String",
+            "$value": "false"
+        },
+        "IntegrateBoardsWorkItems": {
+            "$type": "System.String",
+            "$value": "False"
+        }
+    },
+    "id": 182,
+    "name": "TFGTemplateDemo Main CD - Database Deployment - SQL Server",
+    "path": "\\TFGTemplateDemo",
+    "projectReference": null
+}

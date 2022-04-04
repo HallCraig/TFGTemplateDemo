@@ -1,0 +1,55 @@
+# Variable 'ApplicationName' was defined in the Variables tab
+# Variable 'ArtifactPublishPath' was defined in the Variables tab
+# Variable 'PackageNumber' was defined in the Variables tab
+jobs:
+- job: Job_1
+  displayName: Build solution
+  pool:
+    name: POS Build 04
+  steps:
+  - checkout: self
+  - task: NuGetToolInstaller@1
+    displayName: Use NuGet 5.2.0
+    inputs:
+      versionSpec: 5.2.0
+  - task: NuGetCommand@2
+    displayName: Restore NuGet packages
+    inputs:
+      selectOrConfig: config
+      nugetConfigPath: Solution Items/nuget.config
+      noCache: true
+  - task: SetValueFromXML@0
+    displayName: Set Variable Version extracted with expression /*[name()='package']/*[name()='metadata']/*[name()='version']
+    inputs:
+      variableName: Version
+      xPathExpression: /*[name()='package']/*[name()='metadata']/*[name()='version']
+      xmlFile: Tfg.TFGTemplateDemo.Contracts/.nuspec
+  - task: oneluckidevNuspecRefUpdate@1
+    displayName: Nuspec update Tfg.TFGTemplateDemo.Contracts/.nuspec
+    inputs:
+      nuspecFile: Tfg.TFGTemplateDemo.Contracts/.nuspec
+      projectFile: Tfg.TFGTemplateDemo.Contracts/Tfg.TFGTemplateDemo.Contracts.csproj
+  - task: VSBuild@1
+    displayName: Build solution **\*.sln
+    inputs:
+      vsVersion: 16.0
+      platform: Any CPU
+      configuration: Release
+  - task: NuGetCommand@2
+    displayName: NuGet pack
+    inputs:
+      command: pack
+      configurationToPack: Release
+      versioningScheme: byEnvVar
+      versionEnvVar: PackageNumber
+  - task: PowerShell@2
+    displayName: Generate version file
+    inputs:
+      targetType: inline
+      script: Set-Content -Path $(Build.ArtifactStagingDirectory)\version.txt -Value $(PackageNumber)
+  - task: PublishBuildArtifacts@1
+    displayName: Publish Artifacts
+    inputs:
+      ArtifactName: $(Build.BuildNumber)
+      ArtifactType: FilePath
+      TargetPath: $(ArtifactPublishPath)\$(ApplicationName)

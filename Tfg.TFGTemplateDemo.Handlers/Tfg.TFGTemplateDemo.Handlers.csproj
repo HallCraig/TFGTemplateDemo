@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configurations>Debug;Release;Test;Local</Configurations>
+	<RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
+    <RootNamespace>Tfg.TFGTemplateDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ProductHandlers\fejslqly.ysw~" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Tfg.Patterns.IApiEndpointBuilder" Version="2.0.2" />
+    <PackageReference Include="Tfg.Patterns.IAppBuilder" Version="2.0.3" />
+    <PackageReference Include="Tfg.Patterns.IEntityHelper" Version="2.1.0" />
+    <PackageReference Include="Tfg.Patterns.IMessageBrokerHelper" Version="2.0.5" />
+    <PackageReference Include="Tfg.Patterns.IRequestRouter" Version="2.0.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.4.4" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.4.4" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.4.4" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.4.4" />
+    <PackageReference Include="Tfg.Patterns.IWCFHelper" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tfg.TFGTemplateDemo.Contracts\Tfg.TFGTemplateDemo.Contracts.csproj" />
+    <ProjectReference Include="..\Tfg.TFGTemplateDemo.Data.Entities\Tfg.TFGTemplateDemo.Data.Entities.csproj" />
+    <ProjectReference Include="..\Tfg.TFGTemplateDemo.Domain\Tfg.TFGTemplateDemo.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

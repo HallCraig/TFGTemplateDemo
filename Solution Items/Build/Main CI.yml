@@ -1,0 +1,117 @@
+name: $(Date:yy).$(Date:MM).$(Date:dd)$(Rev:rr)
+trigger:
+  branches:
+    include:
+    - main
+pool:
+  name: 'VSTS Build 01'
+variables:
+- name: solution
+  value: '**/*.sln'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: BuildConfiguration
+  value: 'Release'
+- name: OSProjectName
+  value: 'templateapi'
+- name: VSProject
+  value: 'Tfg.TFGTemplateDemo.Api'
+stages:
+- stage: Build
+  jobs:
+  - job: Job_0
+    displayName: Build Solution
+    steps:
+    - task: NuGetToolInstaller@1
+      inputs:
+        versionSpec: '5.8.1'
+        checkLatest: true
+    - task: NuGetCommand@2
+      inputs:
+        command: 'restore'
+        restoreSolution: '$(solution)'
+        feedsToUse: 'config'
+        nugetConfigPath: 'nuget.config'
+        externalFeedCredentials: 'TFGNuget'
+    - task: VSBuild@1
+      inputs:
+        solution: '$(solution)'
+        msbuildArgs: '/p:DefineConstants="ProductVersion=$(Build.BuildNumber);" /p:DeployOnBuild=true /p:WebPublishMethod=Package /p:PackageAsSingleFile=true /p:SkipInvalidConfigurations=true /p:PackageLocation="$(build.artifactStagingDirectory)\$(buildConfiguration)"'
+        platform: '$(buildPlatform)'
+        configuration: '$(BuildConfiguration)'
+    - task: CmdLine@2
+      displayName: Set Authentication for ADO Artifacts
+      inputs:
+        script: 'C:\Users\svc_tfsapp_service\.nuget\plugins\netfx\CredentialProvider.Microsoft\CredentialProvider.Microsoft.exe -I -V Verbose -U "https://thefoschinigroup.pkgs.visualstudio.com/_packaging/TFG/nuget/v3/index.json"'
+        workingDirectory: 'C:\'
+    - task: DotNetCoreCLI@2
+      displayName: 'Generate Migrations script'
+      inputs:
+        command: custom
+        custom: 'ef '
+        arguments: '--project $(Build.SourcesDirectory)/$(VSProject)/$(VSProject).csproj migrations script -i -o $(Build.ArtifactStagingDirectory)/Migration.sql'
+    - task: VSTest@2
+      inputs:
+        platform: '$(buildPlatform)'
+        configuration: '$(buildConfiguration)'
+    - task: CopyFiles@2
+      inputs:
+        SourceFolder: '$(build.SourcesDirectory)'
+        Contents: |
+          **\CreateDatabase.sql
+          **\Migrate.sql
+        TargetFolder: '$(build.ArtifactStagingDirectory)'
+        flattenFolders: true
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+- stage: OpenShift
+  dependsOn:
+  - build
+  jobs:
+  - job: Job_1
+    displayName: OpenShift Database Scripts/ConfigMaps
+    strategy:
+      maxParallel: 2
+      matrix:
+        Test:
+          AppNamespace: tst-$(OSProjectName)
+        Prod:
+          AppNamespace: prd-$(OSProjectName)
+    steps:
+    - task: 30f35852-3f7e-4c0c-9a88-e127b4f97211@1
+      inputs:
+        alias: current
+        artifact: drop
+    - task: oc-cmd@2
+      displayName: 'Create Configmap - SQL Migrations Script'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'create configmap script-migrations-$(Build.BuildNumber) --from-file=''$(Pipeline.Workspace)\drop\Migration.sql'' -n $(AppNamespace)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Create Configmap - SQL Create Database Script'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'create configmap script-createdb-$(Build.BuildNumber) --from-file=''$(Pipeline.Workspace)\drop\CreateDatabase.sql'' -n $(AppNamespace)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Add Label Configmap'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'label configmap script-migrations-$(Build.BuildNumber) buildnumber=$(Build.BuildNumber) type=script -n $(AppNamespace)'
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Add Label Configmap'
+      inputs:
+        connectionType: 'OpenShift Connection Service'
+        openshiftService: 'OpenShift'
+        cmd: 'label configmap script-createdb-$(Build.BuildNumber) buildnumber=$(Build.BuildNumber) type=script -n $(AppNamespace)'
+        uselocalOc: true
+    
+

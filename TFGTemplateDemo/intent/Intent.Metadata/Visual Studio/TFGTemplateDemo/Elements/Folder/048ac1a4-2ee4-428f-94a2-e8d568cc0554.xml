@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="048ac1a4-2ee4-428f-94a2-e8d568cc0554" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>UserHandlers</name>
+  <display>UserHandlers</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</parentFolderId>
+  <stereotypes />
+  <childElements>
+    <childElement id="50c125ef-806c-4dca-ac55-003f30454f8c" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.WCF.GetUserHandler</name>
+      <display>TFG.Modules.WCF.GetUserHandler</display>
+      <externalReference>TFG.Modules.WCF</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>048ac1a4-2ee4-428f-94a2-e8d568cc0554</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Api", "Tfg.TFGTemplateDemo.Api\Tfg.TFGTemplateDemo.Api.csproj", "{99B1B20D-BCCE-44DA-9EF0-C6690941F045}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Data", "Tfg.TFGTemplateDemo.Data\Tfg.TFGTemplateDemo.Data.csproj", "{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Data.Entities", "Tfg.TFGTemplateDemo.Data.Entities\Tfg.TFGTemplateDemo.Data.Entities.csproj", "{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Application", "2 Application", "{FEB939C9-7A83-4D2A-9918-FBF8EAF3C239}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 Infrastructure", "3 Infrastructure", "{DD24ECC4-3712-43BC-8AC2-D867CD42111E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 Persistence", "4 Persistence", "{B423A347-B156-4ADF-A254-45D7EAE96372}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7 Solution Items", "7 Solution Items", "{DA60396F-8C8C-4FFD-8A5B-F0A65C48D365}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		git_setup.ps1 = git_setup.ps1
+		Solution Items\Migrate.ps1 = Solution Items\Migrate.ps1
+		Solution Items\NuGet Build CI.yml = Solution Items\NuGet Build CI.yml
+		Solution Items\NuGet Release CD.json = Solution Items\NuGet Release CD.json
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6 Testing", "6 Testing", "{7AA09224-036A-4EA3-8585-90CADD81102D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Presentation", "1 Presentation", "{EE666011-0F6F-498F-909A-09395EDBB9FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Domain", "5 Domain", "{B746E3D6-E1F6-4E73-B210-0878C728766A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. MOVE TO NUGET PACKAGE", "8. MOVE TO NUGET PACKAGE", "{4EE1DCE1-A3FE-4A70-A713-6971ADE4F6A8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Infrastructure", "Tfg.TFGTemplateDemo.Infrastructure\Tfg.TFGTemplateDemo.Infrastructure.csproj", "{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.IntegrationApi", "Tfg.TFGTemplateDemo.IntegrationApi\Tfg.TFGTemplateDemo.IntegrationApi.csproj", "{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.SchedulerApi", "Tfg.TFGTemplateDemo.SchedulerApi\Tfg.TFGTemplateDemo.SchedulerApi.csproj", "{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Domain", "Tfg.TFGTemplateDemo.Domain\Tfg.TFGTemplateDemo.Domain.csproj", "{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Handlers", "Tfg.TFGTemplateDemo.Handlers\Tfg.TFGTemplateDemo.Handlers.csproj", "{264E00F6-1606-4694-A122-8F89C4598FA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tfg.TFGTemplateDemo.Contracts", "Tfg.TFGTemplateDemo.Contracts\Tfg.TFGTemplateDemo.Contracts.csproj", "{44C8DC82-1ECE-470D-A629-7E8B074E87E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{D443A360-903B-4839-88CF-C2DC0139C22D}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Build\Development - OpenShift API Image.yml = Solution Items\Build\Development - OpenShift API Image.yml
+		Solution Items\Build\Development - OpenShift Integration Image.yml = Solution Items\Build\Development - OpenShift Integration Image.yml
+		Solution Items\Build\Development - OpenShift Scheduler Image.yml = Solution Items\Build\Development - OpenShift Scheduler Image.yml
+		Solution Items\Build\Development CI.yml = Solution Items\Build\Development CI.yml
+		Solution Items\Build\Main - OpenShift API Image.yml = Solution Items\Build\Main - OpenShift API Image.yml
+		Solution Items\Build\Main - OpenShift Integration Image.yml = Solution Items\Build\Main - OpenShift Integration Image.yml
+		Solution Items\Build\Main - OpenShift Scheduler Image.yml = Solution Items\Build\Main - OpenShift Scheduler Image.yml
+		Solution Items\Build\Main CI.yml = Solution Items\Build\Main CI.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Release", "Release", "{0E743CD7-5B62-4275-9263-3BEFE9B26696}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\Release\Development CD - Database Deployment - OpenShift.json = Solution Items\Release\Development CD - Database Deployment - OpenShift.json
+		Solution Items\Release\Development CD - Database Deployment - SQL Server.json = Solution Items\Release\Development CD - Database Deployment - SQL Server.json
+		Solution Items\Release\Development CD - OpenShift Api Image.json = Solution Items\Release\Development CD - OpenShift Api Image.json
+		Solution Items\Release\Development CD - OpenShift Integration Image.json = Solution Items\Release\Development CD - OpenShift Integration Image.json
+		Solution Items\Release\Development CD - OpenShift Scheduler Image.json = Solution Items\Release\Development CD - OpenShift Scheduler Image.json
+		Solution Items\Release\Main CD - Database Deployment - OpenShift.json = Solution Items\Release\Main CD - Database Deployment - OpenShift.json
+		Solution Items\Release\Main CD - Database Deployment - SQL Server.json = Solution Items\Release\Main CD - Database Deployment - SQL Server.json
+		Solution Items\Release\Main CD - OpenShift Api Image.json = Solution Items\Release\Main CD - OpenShift Api Image.json
+		Solution Items\Release\Main CD - OpenShift Integration Image.json = Solution Items\Release\Main CD - OpenShift Integration Image.json
+		Solution Items\Release\Main CD - OpenShift Scheduler Image.json = Solution Items\Release\Main CD - OpenShift Scheduler Image.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Local|Any CPU = Local|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Test|Any CPU = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Local|Any CPU.Build.0 = Local|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045}.Test|Any CPU.Build.0 = Test|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Local|Any CPU.Build.0 = Local|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604}.Test|Any CPU.Build.0 = Test|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Local|Any CPU.Build.0 = Local|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B}.Test|Any CPU.Build.0 = Test|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Local|Any CPU.Build.0 = Local|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE}.Test|Any CPU.Build.0 = Test|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Local|Any CPU.Build.0 = Local|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA}.Test|Any CPU.Build.0 = Test|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Local|Any CPU.ActiveCfg = Debug|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Local|Any CPU.Build.0 = Debug|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Local|Any CPU.Build.0 = Local|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{264E00F6-1606-4694-A122-8F89C4598FA3}.Test|Any CPU.Build.0 = Test|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Local|Any CPU.ActiveCfg = Local|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Local|Any CPU.Build.0 = Local|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7}.Test|Any CPU.Build.0 = Test|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{99B1B20D-BCCE-44DA-9EF0-C6690941F045} = {EE666011-0F6F-498F-909A-09395EDBB9FD}
+		{AE5BFC2F-20F2-4301-93DF-58FE95E3E604} = {B423A347-B156-4ADF-A254-45D7EAE96372}
+		{0FFEB72B-6AFA-49EE-B854-D9B35EB0237B} = {B423A347-B156-4ADF-A254-45D7EAE96372}
+		{AAE5485E-2F2C-430E-BDDE-89311F3B33B9} = {DD24ECC4-3712-43BC-8AC2-D867CD42111E}
+		{BBE52A3D-6B8D-4191-AC3C-9B6CE5F1A7CE} = {EE666011-0F6F-498F-909A-09395EDBB9FD}
+		{6F5E410C-C16C-4EE7-BE51-80B54F4A9ABA} = {EE666011-0F6F-498F-909A-09395EDBB9FD}
+		{E745D48F-CD47-4858-BD59-0FDF4BBB9AD8} = {B746E3D6-E1F6-4E73-B210-0878C728766A}
+		{264E00F6-1606-4694-A122-8F89C4598FA3} = {FEB939C9-7A83-4D2A-9918-FBF8EAF3C239}
+		{44C8DC82-1ECE-470D-A629-7E8B074E87E7} = {4EE1DCE1-A3FE-4A70-A713-6971ADE4F6A8}
+		{D443A360-903B-4839-88CF-C2DC0139C22D} = {DA60396F-8C8C-4FFD-8A5B-F0A65C48D365}
+		{0E743CD7-5B62-4275-9263-3BEFE9B26696} = {DA60396F-8C8C-4FFD-8A5B-F0A65C48D365}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21747992-AB38-4762-99AE-1562FDE6AD31}
+	EndGlobalSection
+EndGlobal

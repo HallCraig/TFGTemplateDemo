@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="7a83cc28-738b-4f5b-a0e0-39d4943858a0" type="Service" typeId="b16578a5-27b1-4047-a8df-f0b783d706bd">
+  <name>Product</name>
+  <display>Product</display>
+  <isAbstract>false</isAbstract>
+  <order>2</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>9db86df5-f046-4080-a7dd-9aebb59f01df</parentFolderId>
+  <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+  <packageName>Services</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="c29224ec-d473-4b95-ad4a-ec55c676c4fd" name="Http Service Settings">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+      <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+      <properties>
+        <property name="1e223bd0-7a72-435a-8741-a612d88e4a12" display="Route" value="api/product" isActive="true" />
+      </properties>
+    </stereotype>
+    <stereotype stereotypeDefinitionId="0bb2d781-84ed-4146-adf8-13192d761340" name="Endpoint Information">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+      <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+      <properties>
+        <property name="b1dc0393-2569-47b1-b403-667818f8a08e" display="Group Name" value="Product" isActive="true" />
+        <property name="633caee1-e9d2-4e37-b9f2-6a3a0b83ea6d" display="Group Description" value="Basic CRUD Operations for Product" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="8564e337-6409-4c6e-a456-64b4edb0d6a7" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Create</name>
+      <display>Create(): ProductResponse</display>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <typeReference id="7b97c3a7-3087-4a87-b88a-e77b89ffca70">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="e9547f68-be10-478c-b043-510503027d6c" name="SubmitProductRequest" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="POST" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Submit Product" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Create a new product" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements />
+    </childElement>
+    <childElement id="bedeb5e8-ae75-437b-849d-1d3893a1fbc3" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Update</name>
+      <display>Update(): ProductResponse</display>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <typeReference id="1eb73f4a-1c48-47d2-bcda-e003148f0d42">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="e9547f68-be10-478c-b043-510503027d6c" name="SubmitProductRequest" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="PUT" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Submit Product" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Update an existing product information" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements />
+    </childElement>
+    <childElement id="1857da4d-9556-459e-89f9-52ec16bab39d" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>Delete</name>
+      <display>Delete(Id: guid, UserModified: string): DeleteProductResponse</display>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <typeReference id="ec5b2fa9-a29d-4a5b-88d1-569969350f60">
+        <typeId>2ccb3b88-43d1-4bc9-83b7-514be6fdf1fa</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>e4e36072-a2ce-42d3-93c5-0b496d79ef43</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="20c467e3-9bdb-427b-a647-b6347c6ae4e4" name="DeleteProductRequest" type="element" specialization="Command" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="DELETE" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="{Id}/{UserModified}" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Delete Product" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Delete product using the product Id" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements>
+        <childElement id="c176f034-22bb-4b2e-a40f-e40458794775" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>Id</name>
+          <display>in : Id: guid</display>
+          <isAbstract>false</isAbstract>
+          <order>1</order>
+          <genericTypes />
+          <typeReference id="985bb2dd-e4c4-448c-aaad-7c1bcc7fedad">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>1857da4d-9556-459e-89f9-52ec16bab39d</parentFolderId>
+          <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+          <packageName>Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="b1d538be-48b8-4baf-9c41-b9fec1817a14" name="Endpoint Information">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+              <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+              <properties>
+                <property name="189192e7-c06f-4c1b-a23f-3c0034c0c636" display="Description" value="Product Id" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <childElements />
+        </childElement>
+        <childElement id="afe2d0a7-5376-4d12-af33-c1323de6c408" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>UserModified</name>
+          <display>in : UserModified: string</display>
+          <isAbstract>false</isAbstract>
+          <order>2</order>
+          <genericTypes />
+          <typeReference id="6ec0d195-14be-4a5b-8e4b-cd3ddc2c83e4">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>1857da4d-9556-459e-89f9-52ec16bab39d</parentFolderId>
+          <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+          <packageName>Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="b1d538be-48b8-4baf-9c41-b9fec1817a14" name="Endpoint Information">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+              <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+              <properties>
+                <property name="189192e7-c06f-4c1b-a23f-3c0034c0c636" display="Description" value="User deleting record" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="78e0d7b9-55cd-466e-aa0c-e1b64e779983" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetById</name>
+      <display>GetById(Id: guid): ProductResponse</display>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <typeReference id="0a1b452d-b30c-41e8-a900-ba1dfe5d010a">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="a14b0559-3dad-4121-8f1e-89c74888eef3" name="GetProductRequest" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="id/{Id}" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Get Product By Id" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Retrieve product information by using the product Id" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements>
+        <childElement id="a4a95c79-cd7e-42fa-adfc-aa98edd2a7c4" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>Id</name>
+          <display>in : Id: guid</display>
+          <isAbstract>false</isAbstract>
+          <order>1</order>
+          <genericTypes />
+          <typeReference id="5fb8a083-f853-4527-8f4d-7fb7841fc08e">
+            <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>78e0d7b9-55cd-466e-aa0c-e1b64e779983</parentFolderId>
+          <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+          <packageName>Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="b1d538be-48b8-4baf-9c41-b9fec1817a14" name="Endpoint Information">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+              <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+              <properties>
+                <property name="189192e7-c06f-4c1b-a23f-3c0034c0c636" display="Description" value="Product Id" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="b8dece2c-9779-49f3-a158-373dba23ffb6" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetByCode</name>
+      <display>GetByCode(Code: string): ProductResponse</display>
+      <isAbstract>false</isAbstract>
+      <order>4</order>
+      <genericTypes />
+      <typeReference id="b132475c-2950-4a7e-a20b-e12076981bba">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="a14b0559-3dad-4121-8f1e-89c74888eef3" name="GetProductRequest" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="code/{Code}" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Get Product By Code" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Retrieve product information by using the product code" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements>
+        <childElement id="ac3b1e65-ddd4-4ec0-b987-a035a32beba7" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>Code</name>
+          <display>in : Code: string</display>
+          <isAbstract>false</isAbstract>
+          <order>1</order>
+          <genericTypes />
+          <typeReference id="7aadbabb-d6dc-4203-a9ef-66ee4092258a">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>b8dece2c-9779-49f3-a158-373dba23ffb6</parentFolderId>
+          <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+          <packageName>Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="b1d538be-48b8-4baf-9c41-b9fec1817a14" name="Endpoint Information">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+              <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+              <properties>
+                <property name="189192e7-c06f-4c1b-a23f-3c0034c0c636" display="Description" value="Product Code" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+    <childElement id="61614539-40de-4774-920b-5cc3e5eed6b8" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAll</name>
+      <display>GetAll(): ProductResponse[*]</display>
+      <isAbstract>false</isAbstract>
+      <order>5</order>
+      <genericTypes />
+      <typeReference id="d1e8eaf9-765d-47f2-9fd9-d7244b5ab1cf">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="c6d848e5-3304-4736-9560-c0339d762129" name="GetProductsRequest" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Get Products" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Retrieve all active products information" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements />
+    </childElement>
+    <childElement id="aa5e7198-f043-4b1d-b4fa-0c9090dc9672" type="Operation" typeId="e030c97a-e066-40a7-8188-808c275df3cb">
+      <name>GetAllByName</name>
+      <display>GetAllByName(Name: string): ProductResponse[*]</display>
+      <isAbstract>false</isAbstract>
+      <order>6</order>
+      <genericTypes />
+      <typeReference id="835ff9b6-7194-4cf6-a893-3974600a8b74">
+        <typeId>d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>true</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Services</typePackageName>
+        <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>true</isMapped>
+      <mappedClass>
+        <applicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</applicationId>
+        <metadataId>81104ae6-2bc5-4bae-b05a-f987b0372d81</metadataId>
+        <mappingSettingsId>f15fa935-434e-4983-b283-25cde2cb440e</mappingSettingsId>
+        <autoSyncTypeReference>true</autoSyncTypeReference>
+        <mappedPath>
+          <target id="c6d848e5-3304-4736-9560-c0339d762129" name="GetProductsRequest" type="element" specialization="Query" />
+        </mappedPath>
+      </mappedClass>
+      <parentFolderId>7a83cc28-738b-4f5b-a0e0-39d4943858a0</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes>
+        <stereotype stereotypeDefinitionId="b4581ed2-42ec-4ae2-83dd-dcdd5f0837b6" name="Http Settings">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+          <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+          <properties>
+            <property name="801c3e61-4431-4d81-93fa-7e57d33cb3fa" display="Verb" value="GET" isActive="true" />
+            <property name="5dd3e07d-76eb-45d4-9956-4325fb068acc" display="Route" value="name/{Name}" isActive="true" />
+          </properties>
+        </stereotype>
+        <stereotype stereotypeDefinitionId="952d456a-81ca-49c1-a1f7-8ea018b0da37" name="Endpoint Information">
+          <addedByDefault>true</addedByDefault>
+          <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+          <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+          <properties>
+            <property name="9815323c-2b1a-469a-8613-33bda4f0afd3" display="Summary" value="Get Products By Name" isActive="true" />
+            <property name="cd63672f-7384-47a6-9167-586d4f760265" display="Description" value="Retrieve products by using the product name" isActive="true" />
+            <property name="d02fa89f-c889-4b38-b52a-879e0ab4ae8f" display="Deprecated" value="false" isActive="true" />
+          </properties>
+        </stereotype>
+      </stereotypes>
+      <childElements>
+        <childElement id="19c19b64-1a1e-47bf-8448-62375105ac13" type="Parameter" typeId="00208d20-469d-41cb-8501-768fd5eb796b">
+          <name>Name</name>
+          <display>in : Name: string</display>
+          <isAbstract>false</isAbstract>
+          <order>1</order>
+          <genericTypes />
+          <typeReference id="3efe5c00-0b91-443e-ae74-f39c134d1d25">
+            <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+            <isNavigable>true</isNavigable>
+            <isNullable>false</isNullable>
+            <isCollection>false</isCollection>
+            <isRequired>true</isRequired>
+            <typePackageName>Intent.Common.Types</typePackageName>
+            <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+            <stereotypes />
+            <genericTypeParameters />
+          </typeReference>
+          <isMapped>false</isMapped>
+          <parentFolderId>aa5e7198-f043-4b1d-b4fa-0c9090dc9672</parentFolderId>
+          <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+          <packageName>Services</packageName>
+          <stereotypes>
+            <stereotype stereotypeDefinitionId="d01df110-1208-4af8-a913-92a49d219552" name="Parameter Settings">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>Intent.Metadata.WebApi</definitionPackageName>
+              <definitionPackageId>0011387a-b122-45d7-9cdb-8e21b315ab9f</definitionPackageId>
+              <properties>
+                <property name="d2630e0f-f930-404f-b453-1e8052a712f5" display="Source" value="Default" isActive="true" />
+              </properties>
+            </stereotype>
+            <stereotype stereotypeDefinitionId="b1d538be-48b8-4baf-9c41-b9fec1817a14" name="Endpoint Information">
+              <addedByDefault>true</addedByDefault>
+              <definitionPackageName>TFG.Modules.WebApi.Metadata</definitionPackageName>
+              <definitionPackageId>a8c7bd41-c0f2-447e-9791-dbe5a49bf80c</definitionPackageId>
+              <properties>
+                <property name="189192e7-c06f-4c1b-a23f-3c0034c0c636" display="Description" value="Product Name" isActive="true" />
+              </properties>
+            </stereotype>
+          </stereotypes>
+          <childElements />
+        </childElement>
+      </childElements>
+    </childElement>
+  </childElements>
+</class>

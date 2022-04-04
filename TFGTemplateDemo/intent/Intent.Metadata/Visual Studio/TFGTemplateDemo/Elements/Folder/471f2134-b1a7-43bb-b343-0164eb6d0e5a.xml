@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="471f2134-b1a7-43bb-b343-0164eb6d0e5a" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>User</name>
+  <display>User</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>93063032-f182-493a-ad38-ad2dd36c7ab5</parentFolderId>
+  <stereotypes />
+  <childElements>
+    <childElement id="bb1358e8-2d2f-4527-b37e-e2a7ad7307f5" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.WCF.GetUserRequest</name>
+      <display>TFG.Modules.WCF.GetUserRequest</display>
+      <externalReference>TFG.Modules.WCF</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>471f2134-b1a7-43bb-b343-0164eb6d0e5a</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="df89d7f4-752a-4b01-bb14-7b1ea6b6307a" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.WCF.GetUserResponse</name>
+      <display>TFG.Modules.WCF.GetUserResponse</display>
+      <externalReference>TFG.Modules.WCF</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>471f2134-b1a7-43bb-b343-0164eb6d0e5a</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

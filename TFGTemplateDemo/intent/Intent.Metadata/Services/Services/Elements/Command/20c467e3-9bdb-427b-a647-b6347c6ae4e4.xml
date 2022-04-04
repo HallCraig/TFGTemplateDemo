@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="20c467e3-9bdb-427b-a647-b6347c6ae4e4" type="Command" typeId="ccf14eb6-3a55-4d81-b5b9-d27311c70cb9">
+  <name>DeleteProductRequest</name>
+  <display>DeleteProductRequest: DeleteProductResponse</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <typeReference id="ff21c2a8-1636-4441-af5c-48c09069b5b7">
+    <typeId>2ccb3b88-43d1-4bc9-83b7-514be6fdf1fa</typeId>
+    <isNavigable>true</isNavigable>
+    <isNullable>false</isNullable>
+    <isCollection>false</isCollection>
+    <isRequired>true</isRequired>
+    <typePackageName>Services</typePackageName>
+    <typePackageId>9db86df5-f046-4080-a7dd-9aebb59f01df</typePackageId>
+    <stereotypes />
+    <genericTypeParameters />
+  </typeReference>
+  <isMapped>false</isMapped>
+  <parentFolderId>4e3c5c46-3cfb-4dfa-a746-3a5da7b5512b</parentFolderId>
+  <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+  <packageName>Services</packageName>
+  <stereotypes />
+  <childElements>
+    <childElement id="9fc8764f-63fe-49c2-8f40-1263e7c1112a" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>Id</name>
+      <display>Id: guid</display>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <typeReference id="dcee56a6-f466-433d-a221-b7f3f58eae66">
+        <typeId>6b649125-18ea-48fd-a6ba-0bfff0d8f488</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>20c467e3-9bdb-427b-a647-b6347c6ae4e4</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="e62a3b5e-95f1-414c-8545-3ef711c9abe0" type="DTO-Field" typeId="7baed1fd-469b-4980-8fd9-4cefb8331eb2">
+      <name>UserModified</name>
+      <display>UserModified: string</display>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <typeReference id="e89ea827-7bec-43fd-89a0-907c36a4c682">
+        <typeId>d384db9c-a279-45e1-801e-e4e8099625f2</typeId>
+        <isNavigable>true</isNavigable>
+        <isNullable>false</isNullable>
+        <isCollection>false</isCollection>
+        <isRequired>true</isRequired>
+        <typePackageName>Intent.Common.Types</typePackageName>
+        <typePackageId>870ad967-cbd4-4ea9-b86d-9c3a5d55ea67</typePackageId>
+        <stereotypes />
+        <genericTypeParameters />
+      </typeReference>
+      <isMapped>false</isMapped>
+      <parentFolderId>20c467e3-9bdb-427b-a647-b6347c6ae4e4</parentFolderId>
+      <packageId>9db86df5-f046-4080-a7dd-9aebb59f01df</packageId>
+      <packageName>Services</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

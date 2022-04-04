@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="2736de1a-6756-4e1d-8f6a-2f88d8ac8c22" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>IntegrationHandlers</name>
+  <display>IntegrationHandlers</display>
+  <isAbstract>false</isAbstract>
+  <order>2</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="36b94c7a-a255-464e-91bf-805f2f2337ad" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.SampleMessageHandler</name>
+      <display>TFG.Modules.Integration.SampleMessageHandler</display>
+      <externalReference>TFG.Modules.Integration</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>2736de1a-6756-4e1d-8f6a-2f88d8ac8c22</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

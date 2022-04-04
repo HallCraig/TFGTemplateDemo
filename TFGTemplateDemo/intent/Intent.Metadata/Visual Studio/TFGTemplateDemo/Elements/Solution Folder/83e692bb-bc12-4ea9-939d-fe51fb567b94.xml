@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="83e692bb-bc12-4ea9-939d-fe51fb567b94" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>8. MOVE TO NUGET PACKAGE</name>
+  <display>8. MOVE TO NUGET PACKAGE</display>
+  <externalReference>39ccfb86-2a0a-468f-a4ed-7cf20ca650b3</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>7</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2b37436e-982b-4777-b51d-c9dcf6af2903</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

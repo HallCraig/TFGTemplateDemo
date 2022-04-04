@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="840d3a72-781c-45ac-86d6-9cc40c80fa90" type="Runtime Environment" typeId="9edf270e-3f38-406c-ac94-07b9737bb531">
+  <name>Production</name>
+  <display>Production</display>
+  <externalReference>4757e830-9d6c-40e7-ad55-3f416694de40</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>1</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

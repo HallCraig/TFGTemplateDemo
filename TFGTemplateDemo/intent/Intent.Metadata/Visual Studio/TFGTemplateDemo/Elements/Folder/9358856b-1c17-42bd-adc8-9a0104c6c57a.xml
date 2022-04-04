@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="9358856b-1c17-42bd-adc8-9a0104c6c57a" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Broker</name>
+  <display>Broker</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>93063032-f182-493a-ad38-ad2dd36c7ab5</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="011098a8-3f13-4434-b570-4bb9a5bcd373" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageRequest</name>
+      <display>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageRequest</display>
+      <externalReference>TFG.Modules.Integration.Publisher</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9358856b-1c17-42bd-adc8-9a0104c6c57a</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="0721f921-e9b6-4278-bcd1-d7bb4f1f1e41" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageResponse</name>
+      <display>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageResponse</display>
+      <externalReference>TFG.Modules.Integration.Publisher</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9358856b-1c17-42bd-adc8-9a0104c6c57a</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="ef465d5b-50b4-43b5-a5ec-d04f8c78dbc6" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.Publisher.SampleMessage</name>
+      <display>TFG.Modules.Integration.Publisher.SampleMessage</display>
+      <externalReference>TFG.Modules.Integration.Publisher</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>2</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9358856b-1c17-42bd-adc8-9a0104c6c57a</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="fbfd5fe6-8752-4c92-aa8d-684e933d69cf" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.SampleMessage</name>
+      <display>TFG.Modules.Integration.SampleMessage</display>
+      <externalReference>TFG.Modules.Integration</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>3</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>9358856b-1c17-42bd-adc8-9a0104c6c57a</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,18 @@
+﻿IF (NOT EXISTS (SELECT name FROM master.dbo.sysdatabases WHERE (name =  'TFGTemplateDemo')))
+BEGIN
+		EXEC (N'CREATE DATABASE [TFGTemplateDemo]')
+
+		IF SERVERPROPERTY('EngineEdition') <> 5
+		BEGIN
+			ALTER DATABASE [TFGTemplateDemo] SET AUTO_CLOSE OFF WITH NO_WAIT;
+		
+			ALTER DATABASE [TFGTemplateDemo] SET RECOVERY SIMPLE WITH NO_WAIT;
+		
+			ALTER DATABASE [TFGTemplateDemo] SET READ_COMMITTED_SNAPSHOT ON;
+
+			IF (@@servername LIKE '%PRD%')
+    		BEGIN
+    			ALTER DATABASE [TFGTemplateDemo] SET RECOVERY FULL WITH NO_WAIT;    	
+    		END		
+		END
+END

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="f1a0b637-c0ec-4db6-84fd-f9e5032aa66a" type="Solution Folder" typeId="0dc2b846-c968-49eb-99b7-8776919313a8">
+  <name>4 Persistence</name>
+  <display>4 Persistence</display>
+  <externalReference>9048b6fe-2600-4076-b43a-94c6f0d328ee</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>4</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>2b37436e-982b-4777-b51d-c9dcf6af2903</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

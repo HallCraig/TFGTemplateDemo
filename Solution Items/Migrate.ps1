@@ -1,0 +1,1 @@
+Script-Migration -i -context DatabaseContext -output ..\Tfg.TFGTemplateDemo.Data\Migrations\DatabaseMigrationScript\Migrate.sql

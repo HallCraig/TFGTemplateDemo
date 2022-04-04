@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="86d7e93b-4605-4d73-a69a-56efa473ebf6" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>SchedulerHandlers</name>
+  <display>SchedulerHandlers</display>
+  <isAbstract>false</isAbstract>
+  <order>3</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes>
+    <stereotype stereotypeDefinitionId="61132551-825d-4c6e-b9f1-0f95249d08d4" name="Folder Options">
+      <addedByDefault>true</addedByDefault>
+      <definitionPackageName>Intent.VisualStudio.Projects</definitionPackageName>
+      <definitionPackageId>a0636ab7-d3a1-430b-9609-11a18aa3cc7f</definitionPackageId>
+      <properties>
+        <property name="4bfbefd0-d22e-4ca0-9723-92ae273feca4" display="Namespace Provider" value="true" isActive="true" />
+      </properties>
+    </stereotype>
+  </stereotypes>
+  <childElements>
+    <childElement id="f703e698-06bc-4603-bbc7-5b64afd71644" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Integration.Publisher.SchedulerExample.BrokerSchedulerHandler</name>
+      <display>TFG.Modules.Integration.Publisher.SchedulerExample.BrokerSchedulerHandler</display>
+      <externalReference>TFG.Modules.Integration.Publisher</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>86d7e93b-4605-4d73-a69a-56efa473ebf6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+    <childElement id="2dc7ad2b-21e2-4a51-b145-35163b4beb40" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.Scheduler.SampleSchedulerHandler</name>
+      <display>TFG.Modules.Scheduler.SampleSchedulerHandler</display>
+      <externalReference>TFG.Modules.Scheduler</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>1</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>86d7e93b-4605-4d73-a69a-56efa473ebf6</parentFolderId>
+      <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+      <packageName>TFGTemplateDemo</packageName>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<outputLog>
+  <ApplicationId>6f52ad55-ce19-4db9-a69c-51f01060b09b</ApplicationId>
+  <FileLogs>
+    <FileLog>
+      <CorrelationId>TFG.Modules.Docker.DockerIgnore</CorrelationId>
+      <ApplicationRelativeFilePath>../../.dockerignore</ApplicationRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#.gitignore</CorrelationId>
+      <ApplicationRelativeFilePath>../../.gitignore</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>.gitignore</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#git_setup.ps1</CorrelationId>
+      <ApplicationRelativeFilePath>../../git_setup.ps1</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>git_setup.ps1</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#nuget.config</CorrelationId>
+      <ApplicationRelativeFilePath>../../nuget.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>nuget.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#README.md</CorrelationId>
+      <ApplicationRelativeFilePath>../../README.md</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>README.md</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/.gitignore</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/.gitignore</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/.gitignore</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Build#Solution Items/Build/Development - OpenShift API Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Development - OpenShift API Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Development - OpenShift API Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.SolutionItems.Build#Solution Items/Build/Development - OpenShift Integration Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Development - OpenShift Integration Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Development - OpenShift Integration Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SolutionItems.Build#Solution Items/Build/Development - OpenShift Scheduler Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Development - OpenShift Scheduler Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Development - OpenShift Scheduler Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Build#Solution Items/Build/Development CI.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Development CI.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Development CI.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Build#Solution Items/Build/Main - OpenShift API Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Main - OpenShift API Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Main - OpenShift API Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.SolutionItems.Build#Solution Items/Build/Main - OpenShift Integration Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Main - OpenShift Integration Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Main - OpenShift Integration Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SolutionItems.Build#Solution Items/Build/Main - OpenShift Scheduler Image.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Main - OpenShift Scheduler Image.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Main - OpenShift Scheduler Image.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>6b270e64-2d06-4feb-97de-0fcfd8bc840f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Build#Solution Items/Build/Main CI.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Build/Main CI.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Build/Main CI.yml</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#Solution Items/Migrate.ps1</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Migrate.ps1</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Migrate.ps1</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#Solution Items/NuGet Build CI.yml</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/NuGet Build CI.yml</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/NuGet Build CI.yml</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>633d92a0-6884-4f5a-a98b-40cf34c94d4f</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems#Solution Items/NuGet Release CD.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/NuGet Release CD.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/NuGet Release CD.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Development CD - Database Deployment - OpenShift.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Development CD - Database Deployment - OpenShift.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Development CD - Database Deployment - OpenShift.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Development CD - Database Deployment - SQL Server.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Development CD - Database Deployment - SQL Server.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Development CD - Database Deployment - SQL Server.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Development CD - OpenShift Api Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Development CD - OpenShift Api Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Development CD - OpenShift Api Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.SolutionItems.Release#Solution Items/Release/Development CD - OpenShift Integration Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Development CD - OpenShift Integration Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Development CD - OpenShift Integration Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SolutionItems.Release#Solution Items/Release/Development CD - OpenShift Scheduler Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Development CD - OpenShift Scheduler Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Development CD - OpenShift Scheduler Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Main CD - Database Deployment - OpenShift.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Main CD - Database Deployment - OpenShift.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Main CD - Database Deployment - OpenShift.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Main CD - Database Deployment - SQL Server.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Main CD - Database Deployment - SQL Server.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Main CD - Database Deployment - SQL Server.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.SolutionItems.Release#Solution Items/Release/Main CD - OpenShift Api Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Main CD - OpenShift Api Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Main CD - OpenShift Api Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.SolutionItems.Release#Solution Items/Release/Main CD - OpenShift Integration Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Main CD - OpenShift Integration Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Main CD - OpenShift Integration Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>68730a04-5693-408f-aa85-d765f0c2e1d8</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SolutionItems.Release#Solution Items/Release/Main CD - OpenShift Scheduler Image.json</CorrelationId>
+      <ApplicationRelativeFilePath>../../Solution Items/Release/Main CD - OpenShift Scheduler Image.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Solution Items/Release/Main CD - OpenShift Scheduler Image.json</ProjectRelativeFilePath>
+      <IsIgnored>true</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.ApplicationExtensions</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/ApplicationExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ApplicationExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Development#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/appsettings.Development.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Development.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Default#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/appsettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Production#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/appsettings.Production.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Production.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Test#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/appsettings.Test.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Test.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.Docker.Dockerfile#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/Dockerfile</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Dockerfile.</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.EndpointEnrichment</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/EndpointEnrichment.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>EndpointEnrichment.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.Program</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/Program.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Program.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>4772a500-dbd6-44dc-aa4b-ab075b29e24e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.LaunchProfiles</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/Properties/launchSettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>launchSettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.CSProject#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/Tfg.TFGTemplateDemo.Api.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Api.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.WebConfig</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/web.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.WebConfigDevelopment</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/web.Development.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Development.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.WebConfigProduction</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/web.Production.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Production.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>60ba3503-5487-40b1-96ef-2e26243e0b8e</ProjectId>
+      <CorrelationId>TFG.Modules.WebApi.WebConfigTest</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Api/web.Test.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Test.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9358856b-1c17-42bd-adc8-9a0104c6c57a</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageRequest#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Broker/PostSampleMessageRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PostSampleMessageRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9358856b-1c17-42bd-adc8-9a0104c6c57a</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageResponse#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Broker/PostSampleMessageResponse.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PostSampleMessageResponse.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>9358856b-1c17-42bd-adc8-9a0104c6c57a</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.Publisher.SampleMessage#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Broker/SampleMessage.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>SampleMessage.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.CommandModels#20c467e3-9bdb-427b-a647-b6347c6ae4e4</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/DeleteProductRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/DeleteProductRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.DtoModel#2ccb3b88-43d1-4bc9-83b7-514be6fdf1fa</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/DeleteProductResponse.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/DeleteProductResponse.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.QueryModels#a14b0559-3dad-4121-8f1e-89c74888eef3</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/GetProductRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/GetProductRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.QueryModels#c6d848e5-3304-4736-9560-c0339d762129</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/GetProductsRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/GetProductsRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.DtoModel#d5f29ea8-5756-4f0a-bd9d-bf13e1a2bc73</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/ProductResponse.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/ProductResponse.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.CommandModels#e9547f68-be10-478c-b043-510503027d6c</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Product/SubmitProductRequest.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product/SubmitProductRequest.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>93063032-f182-493a-ad38-ad2dd36c7ab5</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#93063032-f182-493a-ad38-ad2dd36c7ab5</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Contracts/Tfg.TFGTemplateDemo.Contracts.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Contracts.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b695b8ff-70cf-4c6d-a882-d9b230a1cfb2</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.AuditTransaction</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data.Entities/AuditTransaction.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>AuditTransaction.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b695b8ff-70cf-4c6d-a882-d9b230a1cfb2</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.Entity#77fe3c60-962f-4eec-b95d-1db0eabe116a</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data.Entities/Product.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Product.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>b695b8ff-70cf-4c6d-a882-d9b230a1cfb2</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#b695b8ff-70cf-4c6d-a882-d9b230a1cfb2</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data.Entities/Tfg.TFGTemplateDemo.Data.Entities.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Data.Entities.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d26c0128-851d-4b17-ba56-1b76ba9b75f1</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.AuditTransactionConfiguration</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Configuration/AuditTransactionConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>AuditTransactionConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>d26c0128-851d-4b17-ba56-1b76ba9b75f1</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.EntityTypeConfiguration#77fe3c60-962f-4eec-b95d-1db0eabe116a</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Configuration/ProductEntityConfiguration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductEntityConfiguration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>0c6604e6-b412-45ac-bb94-4325849f81a6</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.DatabaseContext</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/DatabaseContext.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DatabaseContext.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>0c6604e6-b412-45ac-bb94-4325849f81a6</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.DatabaseSetup</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/DatabaseSetup.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DatabaseSetup.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>0c6604e6-b412-45ac-bb94-4325849f81a6</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.DatabaseSqlGenerator</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/DatabaseSqlGenerator.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>DatabaseSqlGenerator.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>949c9ffb-86a2-4cf3-88cd-c495ae7a4c67</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.CreateDatabase</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Migrations/DatabaseMigrationScript/CreateDatabase.sql</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>CreateDatabase.sql</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>949c9ffb-86a2-4cf3-88cd-c495ae7a4c67</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.Migrate</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Migrations/DatabaseMigrationScript/Migrate.sql</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Migrate.sql</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>c24cb329-9629-4523-95e6-703cdf152147</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.PreMigration</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Migrations/DatabaseSetupMigrations/0000000000000_PreMigration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>0000000000000_PreMigration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>c24cb329-9629-4523-95e6-703cdf152147</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.PostMigration</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Migrations/DatabaseSetupMigrations/9999999999999_PostMigration.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>9999999999999_PostMigration.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>700369b7-9de0-4895-be0b-531db029649c</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.SQLFileGroups</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Scripts/1. Add Filegroups PRE.sql</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>1. Add Filegroups PRE.sql</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>700369b7-9de0-4895-be0b-531db029649c</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.SQLPermissions</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Scripts/2. Permissions PRE.sql</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>2. Permissions PRE.sql</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>700369b7-9de0-4895-be0b-531db029649c</ProjectId>
+      <CorrelationId>TFG.Modules.EntityFrameworkCore.SQLHangfire</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Scripts/99. Hangfire PRE.sql</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>99. Hangfire PRE.sql</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>0c6604e6-b412-45ac-bb94-4325849f81a6</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#0c6604e6-b412-45ac-bb94-4325849f81a6</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Data/Tfg.TFGTemplateDemo.Data.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Data.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>f3f0779e-a5da-4069-b4f6-346fda6c247e</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#f3f0779e-a5da-4069-b4f6-346fda6c247e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Domain/Tfg.TFGTemplateDemo.Domain.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Domain.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>44cb01c9-5fe4-4db5-b635-643fffc0f7c5</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.Publisher.ApiExample.PostSampleMessageHandler#60ba3503-5487-40b1-96ef-2e26243e0b8e</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/BrokerHandlers/PostSampleMessageHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>PostSampleMessageHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.HandlerMarker</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/HandlerMarker.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>HandlerMarker.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>2736de1a-6756-4e1d-8f6a-2f88d8ac8c22</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.SampleMessageHandler</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/IntegrationHandlers/SampleMessageHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>SampleMessageHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.CommandHandler#20c467e3-9bdb-427b-a647-b6347c6ae4e4</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/ProductHandlers/DeleteProductHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductHandlers/DeleteProductHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.QueryHandler#a14b0559-3dad-4121-8f1e-89c74888eef3</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/ProductHandlers/GetProductHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductHandlers/GetProductHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.QueryHandler#c6d848e5-3304-4736-9560-c0339d762129</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/ProductHandlers/GetProductsHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductHandlers/GetProductsHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>TFG.Modules.CQRS.CommandHandler#e9547f68-be10-478c-b043-510503027d6c</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/ProductHandlers/SubmitProductHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>ProductHandlers/SubmitProductHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>86d7e93b-4605-4d73-a69a-56efa473ebf6</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SampleSchedulerHandler</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/SchedulerHandlers/SampleSchedulerHandler.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>SampleSchedulerHandler.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#42d827cc-bb94-4fb4-bb03-8c2fcc9f3674</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Handlers/Tfg.TFGTemplateDemo.Handlers.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Handlers.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>e0ac6e01-39a9-41fe-bd8e-e593103c2b53</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreLibrary.CSProject#e0ac6e01-39a9-41fe-bd8e-e593103c2b53</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.Infrastructure/Tfg.TFGTemplateDemo.Infrastructure.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.Infrastructure.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Development#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/appsettings.Development.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Development.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Default#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/appsettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Production#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/appsettings.Production.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Production.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Test#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/appsettings.Test.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Test.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Docker.Dockerfile#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/Dockerfile</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Dockerfile.</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.IntegrationApiExtensions</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/IntegrationApiExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>IntegrationApiExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.Program</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/Program.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Program.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>66ab84c8-ec69-4fb8-963a-4e728916cab2</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.LaunchProfiles</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/Properties/launchSettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>launchSettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.StartupAppSettings</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/StartupAppSettings.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>StartupAppSettings.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.CSProject#5d0308db-b1b6-4b1a-abc1-769f4a43e183</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/Tfg.TFGTemplateDemo.IntegrationApi.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.IntegrationApi.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.WebConfig</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/web.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.WebConfigDevelopment</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/web.Development.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Development.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.WebConfigProduction</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/web.Production.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Production.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</ProjectId>
+      <CorrelationId>TFG.Modules.Integration.WebConfigTest</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.IntegrationApi/web.Test.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Test.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Development#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/appsettings.Development.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Development.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Default#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/appsettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Production#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/appsettings.Production.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Production.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.AppSettings-Test#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/appsettings.Test.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>appsettings.Test.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Docker.Dockerfile#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/Dockerfile</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Dockerfile.</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.Program</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/Program.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Program.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>70c14a91-3ba7-4290-9669-fca114b0517b</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.LaunchProfiles</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/Properties/launchSettings.json</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>launchSettings.json</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.SchedulerApiExtensions</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/SchedulerApiExtensions.cs</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>SchedulerApiExtensions.cs</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>Intent.VisualStudio.Projects.CoreWeb.CSProject#27d11e3f-4d09-4f5b-8e19-131edbf2336f</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/Tfg.TFGTemplateDemo.SchedulerApi.csproj</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>Tfg.TFGTemplateDemo.SchedulerApi.csproj</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.WebConfig</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/web.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.WebConfigDevelopment</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/web.Development.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Development.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.WebConfigProduction</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/web.Production.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Production.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <ProjectId>27d11e3f-4d09-4f5b-8e19-131edbf2336f</ProjectId>
+      <CorrelationId>TFG.Modules.Scheduler.WebConfigTest</CorrelationId>
+      <ApplicationRelativeFilePath>../../Tfg.TFGTemplateDemo.SchedulerApi/web.Test.config</ApplicationRelativeFilePath>
+      <ProjectRelativeFilePath>web.Test.config</ProjectRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+    <FileLog>
+      <CorrelationId>Intent.VisualStudio.Projects.VisualStudio2015Solution#2b37436e-982b-4777-b51d-c9dcf6af2903</CorrelationId>
+      <ApplicationRelativeFilePath>../../TFGTemplateDemo.sln</ApplicationRelativeFilePath>
+      <IsIgnored>false</IsIgnored>
+    </FileLog>
+  </FileLogs>
+</outputLog>

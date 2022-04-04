@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="4772a500-dbd6-44dc-aa4b-ab075b29e24e" type="Folder" typeId="3407a825-1331-4f3f-89a4-901903ed97ce">
+  <name>Properties</name>
+  <display>Properties</display>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>60ba3503-5487-40b1-96ef-2e26243e0b8e</parentFolderId>
+  <stereotypes />
+  <childElements>
+    <childElement id="fcddef13-4890-46d6-aec5-ea16cee92172" type="Template Output" typeId="d421c322-7a51-4094-89fa-e5d8a0a97b27">
+      <name>TFG.Modules.WebApi.LaunchProfiles</name>
+      <display>TFG.Modules.WebApi.LaunchProfiles</display>
+      <externalReference>TFG.Modules.WebApi</externalReference>
+      <isAbstract>false</isAbstract>
+      <order>0</order>
+      <genericTypes />
+      <isMapped>false</isMapped>
+      <parentFolderId>4772a500-dbd6-44dc-aa4b-ab075b29e24e</parentFolderId>
+      <stereotypes />
+      <childElements />
+    </childElement>
+  </childElements>
+</class>

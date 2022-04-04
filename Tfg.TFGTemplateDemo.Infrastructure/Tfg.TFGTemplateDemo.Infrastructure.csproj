@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<RootNamespace>Tfg.TFGTemplateDemo</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Tfg.Patterns.ApiAppAuditHelper" Version="2.1.2" />
+		<PackageReference Include="Tfg.Patterns.ApiAppBuilder" Version="2.0.0" />
+		<PackageReference Include="Tfg.Patterns.ApiAppMessageBrokerHelper" Version="2.0.7" />
+		<PackageReference Include="Tfg.Patterns.ApiAppRestEndpointBuilder" Version="3.0.6" />
+		<PackageReference Include="Tfg.Patterns.ApiAppRestSwaggerHelper" Version="3.1.6" />
+		<PackageReference Include="Tfg.Patterns.ApiAppSecurityHelper" Version="3.1.3" />
+		<PackageReference Include="Tfg.Patterns.AppRequestRouter" Version="2.0.2" />
+		<PackageReference Include="Tfg.Patterns.AppWCFHelper" Version="2.0.1" />
+		<PackageReference Include="Tfg.Patterns.AuditSink.Logger" Version="2.0.1" />
+		<PackageReference Include="Tfg.Patterns.AuditSink.Persistence" Version="2.0.0" />
+		<PackageReference Include="Tfg.Patterns.ConfigurationHelper" Version="2.1.0" />
+		<PackageReference Include="Tfg.Patterns.EntityHelper" Version="2.1.0" />
+		<PackageReference Include="Tfg.Patterns.LoggingHelper" Version="2.0.1" />
+		<PackageReference Include="Tfg.Patterns.AppPersistenceHelper" Version="2.0.0" />
+		<PackageReference Include="Tfg.Patterns.AppPersistenceHelper.EntityFramework.Sql" Version="2.0.0" />
+		<PackageReference Include="Tfg.Patterns.ApiAppWorkerHelper" Version="2.1.0" />
+		<PackageReference Include="Tfg.Patterns.AppWorkerHelper.Hangfire" Version="2.1.0" />
+		<PackageReference Include="Tfg.Patterns.AppMessageBrokerHelper.Kafka" Version="2.0.6" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Configurations>Debug;Release;Test;Local</Configurations>
+	  <RuntimeIdentifiers>win10-x64;linux-x64</RuntimeIdentifiers>
+    <RootNamespace>Tfg.TFGTemplateDemo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\DatabaseSetupMigrations\20210820070606_test.cs" />
+    <Compile Remove="Migrations\DatabaseSetupMigrations\20210820070606_test.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tfg.EntityFramework" Version="2.0.6" />
+    <PackageReference Include="Tfg.Patterns.PersistenceHelper.EntityFramework" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tfg.TFGTemplateDemo.Data.Entities\Tfg.TFGTemplateDemo.Data.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Migrations\DatabaseMigrationScript\CreateDatabase.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Migrations\DatabaseMigrationScript\Migrate.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\1. Add Filegroups PRE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\2. Permissions PRE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Scripts\99. Hangfire PRE.sql">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,349 @@
+{
+  "source": 2,
+  "revision": 1,
+  "description": null,
+  "createdBy": {
+    "displayName": "Wayne Beckley",
+    "url": "https://spsprodweu2.vssps.visualstudio.com/A5dfaee1e-e6a3-45a0-8845-988cc8ca231d/_apis/Identities/5cc993d1-1ad0-471c-90a3-7cf064079b31",
+    "_links": {
+      "avatar": {
+        "href": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+      }
+    },
+    "id": "5cc993d1-1ad0-471c-90a3-7cf064079b31",
+    "uniqueName": "WayneBe@tfg.co.za",
+    "imageUrl": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4",
+    "descriptor": "aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+  },
+  "createdOn": "2021-06-29T15:10:22.120Z",
+  "modifiedBy": {
+    "displayName": "Wayne Beckley",
+    "url": "https://spsprodweu2.vssps.visualstudio.com/A5dfaee1e-e6a3-45a0-8845-988cc8ca231d/_apis/Identities/5cc993d1-1ad0-471c-90a3-7cf064079b31",
+    "_links": {
+      "avatar": {
+        "href": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+      }
+    },
+    "id": "5cc993d1-1ad0-471c-90a3-7cf064079b31",
+    "uniqueName": "WayneBe@tfg.co.za",
+    "imageUrl": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4",
+    "descriptor": "aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+  },
+  "modifiedOn": "2021-06-29T15:10:22.120Z",
+  "isDeleted": false,
+  "variables": {
+  },
+  "variableGroups": [
+  ],
+  "environments": [
+    {
+      "id": 174,
+      "name": "NuGet Store",
+      "rank": 1,
+      "owner": {
+        "displayName": "Wayne Beckley",
+        "url": "https://spsprodweu2.vssps.visualstudio.com/A5dfaee1e-e6a3-45a0-8845-988cc8ca231d/_apis/Identities/5cc993d1-1ad0-471c-90a3-7cf064079b31",
+        "_links": {
+          "avatar": {
+            "href": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+          }
+        },
+        "id": "5cc993d1-1ad0-471c-90a3-7cf064079b31",
+        "uniqueName": "WayneBe@tfg.co.za",
+        "imageUrl": "https://thefoschinigroup.visualstudio.com/_apis/GraphProfile/MemberAvatars/aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4",
+        "descriptor": "aad.MWY5Nzk2MWEtYTMwOS03Y2FiLTliMGYtMThlMTExYjAyNDc4"
+      },
+      "variables": {
+      },
+      "variableGroups": [
+      ],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 603
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": {
+        "id": 604
+      },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 605
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": {
+              "parallelExecutionType": 0
+            },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": {
+              "downloadInputs": [
+              ]
+            },
+            "queueId": 145,
+            "demands": [
+            ],
+            "enableAccessToken": true,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {
+            }
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Release solution",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {
+              },
+              "taskId": "2c65196a-54fd-4a02-9be8-d9d1837b7c5d",
+              "version": "1.*",
+              "name": "Use NuGet ",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "versionSpec": "",
+                "checkLatest": "false"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "333b11bd-d341-40d9-afcf-b32d5ce6f23b",
+              "version": "2.*",
+              "name": "NuGet push",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "command": "push",
+                "solution": "**/*.sln",
+                "selectOrConfig": "select",
+                "feedRestore": "",
+                "includeNuGetOrg": "true",
+                "nugetConfigPath": "",
+                "externalEndpoints": "",
+                "noCache": "false",
+                "disableParallelProcessing": "false",
+                "packagesDirectory": "",
+                "verbosityRestore": "Detailed",
+                "searchPatternPush": "$(System.DefaultWorkingDirectory)/$(Release.PrimaryArtifactSourceAlias)/$(Build.BuildNumber)/*.nupkg",
+                "nuGetFeedType": "external",
+                "feedPublish": "",
+                "publishPackageMetadata": "true",
+                "allowPackageConflicts": "false",
+                "externalEndpoint": "6eaa501f-a105-4448-ade5-552a9c29c432",
+                "verbosityPush": "Detailed",
+                "searchPatternPack": "**/*.csproj",
+                "configurationToPack": "$(BuildConfiguration)",
+                "outputDir": "$(Build.ArtifactStagingDirectory)",
+                "versioningScheme": "off",
+                "includeReferencedProjects": "false",
+                "versionEnvVar": "",
+                "requestedMajorVersion": "1",
+                "requestedMinorVersion": "0",
+                "requestedPatchVersion": "0",
+                "packTimezone": "utc",
+                "includeSymbols": "false",
+                "toolPackage": "false",
+                "buildProperties": "",
+                "basePath": "",
+                "verbosityPack": "Detailed",
+                "arguments": ""
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "e213ff0f-5d5c-4791-802d-52ea3e7be1f1",
+              "version": "2.*",
+              "name": "Read package number",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "targetType": "inline",
+                "filePath": "",
+                "arguments": "",
+                "script": "# Read the file into a variable\n$content = [IO.File]::ReadAllText('$(System.ArtifactsDirectory)\\$(Release.PrimaryArtifactSourceAlias)\\$(Build.BuildNumber)\\version.txt')\n\n# write the variable to the pipeline variable\nWrite-Output (\"##vso[task.setvariable variable=PackageNumber;]$content\")\n",
+                "errorActionPreference": "stop",
+                "failOnStderr": "false",
+                "showWarnings": "false",
+                "ignoreLASTEXITCODE": "false",
+                "pwsh": "false",
+                "workingDirectory": "",
+                "runScriptInSeparateScope": "false"
+              }
+            },
+            {
+              "environment": {
+              },
+              "taskId": "ee6ff2cf-be8d-4651-8069-2f2f58d67736",
+              "version": "1.*",
+              "name": "Tag Git Release",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": false,
+              "continueOnError": false,
+              "timeoutInMinutes": 0,
+              "definitionType": "task",
+              "overrideInputs": {
+              },
+              "condition": "succeeded()",
+              "inputs": {
+                "name": "$(PackageNumber)",
+                "message": "$(Build.BuildNumber)",
+                "ignoreExisting": "false",
+                "PersonalAccessToken": ""
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [
+      ],
+      "conditions": [
+        {
+          "name": "ReleaseStarted",
+          "conditionType": 1,
+          "value": ""
+        }
+      ],
+      "executionPolicy": {
+        "concurrencyCount": 1,
+        "queueDepthCount": 0
+      },
+      "schedules": [
+      ],
+      "currentRelease": {
+        "id": 1116,
+        "url": "https://thefoschinigroup.vsrm.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_apis/Release/releases/1116",
+        "_links": {
+        }
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {
+      },
+      "properties": {
+        "LinkBoardsWorkItems": {
+          "$type": "System.String",
+          "$value": "False"
+        },
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        }
+      },
+      "preDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "postDeploymentGates": {
+        "id": 0,
+        "gatesOptions": null,
+        "gates": [
+        ]
+      },
+      "environmentTriggers": [
+      ],
+      "badgeUrl": "https://thefoschinigroup.vsrm.visualstudio.com/_apis/public/Release/badge/657e3244-d958-4b3a-ba45-aa4f9b76ce66/119/174"
+    }
+  ],
+  "triggers": [
+  ],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [
+  ],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseClone"
+    },
+    "IntegrateJiraWorkItems": {
+      "$type": "System.String",
+      "$value": "false"
+    },
+    "IntegrateBoardsWorkItems": {
+      "$type": "System.String",
+      "$value": "False"
+    }
+  },
+  "id": 119,
+  "name": "NuGet Master CD",
+  "projectReference": null,
+  "url": "https://thefoschinigroup.vsrm.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_apis/Release/definitions/119",
+  "_links": {
+    "self": {
+      "href": "https://thefoschinigroup.vsrm.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_apis/Release/definitions/119"
+    },
+    "web": {
+      "href": "https://thefoschinigroup.visualstudio.com/657e3244-d958-4b3a-ba45-aa4f9b76ce66/_release?definitionId=119"
+    }
+  }
+}

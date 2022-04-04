@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<class id="5055807e-61ed-40d4-aedc-26bcc182d12a" type="Runtime Environment" typeId="9edf270e-3f38-406c-ac94-07b9737bb531">
+  <name>Development</name>
+  <display>Development</display>
+  <externalReference>ba3875c8-d758-43c0-8dcd-f4ddd0b39851</externalReference>
+  <isAbstract>false</isAbstract>
+  <order>0</order>
+  <genericTypes />
+  <isMapped>false</isMapped>
+  <parentFolderId>5d0308db-b1b6-4b1a-abc1-769f4a43e183</parentFolderId>
+  <packageId>2b37436e-982b-4777-b51d-c9dcf6af2903</packageId>
+  <packageName>TFGTemplateDemo</packageName>
+  <stereotypes />
+  <childElements />
+</class>

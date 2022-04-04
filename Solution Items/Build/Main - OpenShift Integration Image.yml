@@ -1,0 +1,66 @@
+name: $(Date:yy).$(Date:MM).$(Date:dd)$(Rev:rr)
+trigger:
+  branches:
+    include:
+    - main
+pool:
+  name: 'VSTS Release 01'
+variables:
+- group: Deployment Variables
+- name: BuildNamespace
+  value: 'build-templateapi'
+- name: ImageName
+  value: 'main-tfgtemplatedemointegration'
+- name: buildConfiguration
+  value: 'Release'
+- name: ProjectFolder
+  value: 'Tfg.TFGTemplateDemo.IntegrationApi'
+stages:
+- stage: __default
+  jobs:
+  - job: Job_0
+    displayName: OpenShift Build Image
+    steps:
+    - task: 6d15af64-176c-496d-b583-fd2ae21d4df4@1
+      inputs:
+        repository: self
+        clean: true
+    - task: oc-cmd@2
+      displayName: Create Build Config
+      inputs:
+        openshiftService: OpenShift
+        cmd: new-build --name $(ImageName) --strategy docker --binary -n $(BuildNamespace)
+        ignoreFlag: true
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: Patch config Update parameters
+      inputs:
+        openshiftService: OpenShift
+        cmd: "patch bc $(ImageName) -p '{\"spec\":{\"strategy\":{\"dockerStrategy\":{\"env\":[{\"name\": \"ArtifactsLocation\",\"value\":\"$(ArtifactsLocation)\"},{\"name\": \"ArtifactsAccessToken\",\"value\":\"$(ArtifactsAccessToken)\"},{\"name\": \"BuildConfig\",\"value\":\"$(buildConfiguration)\"}]}}}}' -n $(BuildNamespace)"
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: Patch Config Docker file Project location
+      inputs:
+        openshiftService: OpenShift
+        cmd: patch bc $(ImageName) --patch "{\"spec\":{\"strategy\":{\"dockerStrategy\":{\"dockerfilePath\":\"$(ProjectFolder)/Dockerfile\"}}}}" -n $(BuildNamespace)
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Patch Config Limits for CPU/Memory'
+      inputs:
+        openshiftService: OpenShift
+        cmd: 'patch bc $(ImageName) -p ''{"spec":{"resources":{"limits":{"cpu":"2200m","memory":"3Gi"},"requests":{"cpu":"2","memory":"2Gi"}}}}'' -n $(BuildNamespace)'
+        uselocalOc: true
+    - task: OcConditionalCmd@2
+      displayName: Create Application Build Image
+      inputs:
+        openshiftService: OpenShift
+        cmd: start-build $(ImageName) --from-dir=$(Build.Repository.LocalPath) --follow -n $(BuildNamespace) -w
+        resource: bc $(ImageName) -n $(BuildNamespace)
+        uselocalOc: true
+    - task: oc-cmd@2
+      displayName: 'Tag image with Build Number'
+      inputs:
+        openshiftService: OpenShift
+        cmd: 'tag $(ImageName):latest $(ImageName):$(Build.BuildNumber) -n $(BuildNamespace)'
+        uselocalOc: true
+
