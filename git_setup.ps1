@@ -5,6 +5,7 @@ git remote add origin https://thefoschinigroup.visualstudio.com/DA/_git/Tfg%20Te
 git push -u origin --all
 git branch development
 git checkout development
+
 git push -u origin development
 
 echo . >> TFGTemplateDemo.sln
